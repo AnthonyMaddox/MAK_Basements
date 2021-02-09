@@ -1,0 +1,15 @@
+.App {
+    box-sizing: border-box;
+}
+
+.pic {
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+

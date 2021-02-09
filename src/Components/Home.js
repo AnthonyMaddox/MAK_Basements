@@ -4,7 +4,6 @@ import "../App.css";
 import ModalImage from "react-modal-image";
 
 
-
 class Home extends Component {
   render() {
     return (
@@ -20,14 +19,12 @@ class Home extends Component {
                 small={blue_shark}
                 large={blue_shark}
                 hideDownload="true"
-                
             />
             <ModalImage
                 className="pic"
                 small={blue_shark}
                 large={blue_shark}
-                hideDownload="true"
-                
+                hideDownload="true"   
             />
             <ModalImage
                 className="pic"

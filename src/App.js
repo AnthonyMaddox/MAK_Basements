@@ -20,7 +20,7 @@ class App extends Component {
       <div className="app">
         <nav className="navBar">
           <Link className="navLink" to="/home">
-            <img src={logo} alt="MAK Basements Home" />
+            <div className="logoDiv"><img src={logo} alt="MAK Basements Home" /></div>
           </Link>
             <div className="sideNav">
                 <Link className="navLink" to="/kitchenettes">

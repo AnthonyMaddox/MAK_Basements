@@ -1,15 +1,39 @@
-.App {
-    box-sizing: border-box;
+.app {
+  box-sizing: border-box;
 }
+
+
+/* nav bar */
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+.sideNav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #2844B7;
+  padding: 5px;
+}
+.navLink:visited {
+    text-decoration: none;
+    color: #2844B7;
+  }
+/* picture gallery */
 
 .pic {
-    height: 120px;
-    width: 200px;
-    object-fit: cover;
+  height: 120px;
+  width: 200px;
+  object-fit: cover;
+  
 }
 .gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-

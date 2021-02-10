@@ -4,6 +4,8 @@ import Kitchenette from "./Components/Kitchenette";
 import Bathroom from "./Components/Bathroom";
 import "./App.css";
 import { Route, Link, Redirect } from "react-router-dom";
+import logo from "./Images/MAK_Basement_Logo.jpg"
+
 //route is telling the app what component to render when something is clicked on (defining path)
 //Link replaces a tag from traditional html (what to click on to go somewhere)
 class App extends Component {
@@ -13,22 +15,21 @@ class App extends Component {
     };
   }
 
-
-
   render() {
     return (
-      <div>
-        <nav>
-          <Link to="/home">
-            <h1>MAK Basements Home</h1>
+      <div className="app">
+        <nav className="navBar">
+          <Link className="navLink" to="/home">
+            <img src={logo} alt="MAK Basements Home" />
           </Link>
-
-          <Link to="/kitchenettes">
-            <h1>Kitchenettes</h1>
-          </Link>
-          <Link to="/bathrooms">
-            <h1>Bathrooms</h1>
-          </Link>
+            <div className="sideNav">
+                <Link className="navLink" to="/kitchenettes">
+                    <p>Kitchenettes</p>
+                </Link>
+                <Link className="navLink" to="/bathrooms">
+                    <p>Bathrooms</p>
+                </Link>
+            </div>
         </nav>
         <main>
         <Route path="/" render={() => <Redirect to="/home" />} />

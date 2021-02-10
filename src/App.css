@@ -3,11 +3,16 @@
 }
 
 /* nav bar */
-
+.logoDiv {
+}
+.logoImg {
+  height: 50px;
+  object-fit: cover;
+}
 .navBar {
   display: flex;
   justify-content: space-between;
-  margin: 0 5%;
+  margin: 10px 5% 10px 5%;
 }
 .sideNav {
   display: flex;
@@ -23,6 +28,27 @@
   text-decoration: none;
   color: #2844b7;
 }
+.navLink:hover {
+  text-decoration: underline;
+}
+.linkText {
+    font-size: 14px;
+}
+
+/* home page */
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+.titleBar {
+  height: 25px;
+  width: 100%;
+  color: white;
+  background-color: #2947ad;
+  font-size: 125%;
+  margin-bottom: 15px;
+  text-align: center;
+}
 /* picture gallery */
 
 .pic {
@@ -34,16 +60,4 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-/* home page */
-
-.titleBar {
-  height: 25px;
-  width: 100%;
-  color: white;
-  background-color: #2947ad;
-  font-size: 110%;
-  margin-bottom: 15px;
-  text-align: center;
 }

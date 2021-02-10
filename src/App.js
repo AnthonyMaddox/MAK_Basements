@@ -20,14 +20,14 @@ class App extends Component {
       <div className="app">
         <nav className="navBar">
           <Link className="navLink" to="/home">
-            <div className="logoDiv"><img src={logo} alt="MAK Basements Home" /></div>
+            <div className="logoDiv"><img className="logoImg" src={logo} alt="MAK Basements Home" /></div>
           </Link>
             <div className="sideNav">
                 <Link className="navLink" to="/kitchenettes">
-                    <p>Kitchenettes</p>
+                    <p className="linkText">KITCHENETTES</p>
                 </Link>
                 <Link className="navLink" to="/bathrooms">
-                    <p>Bathrooms</p>
+                    <p className="linkText">BATHROOMS</p>
                 </Link>
             </div>
         </nav>

@@ -4,6 +4,7 @@ class Kitchenette extends Component {
   render() {
     return (
       <div>
+        <div className="titleBar">KITCHENETTES</div>
         <h1>This is the Kitchenette page!</h1>
         <p>MAK Basement Remodeling Kitchenette Gallery</p>
       </div>

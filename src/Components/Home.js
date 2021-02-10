@@ -6,7 +6,7 @@ import ModalImage from "react-modal-image";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="homePage">
         <div className="titleBar">BASEMENTS</div>
         <div className="gallery">
           <ModalImage

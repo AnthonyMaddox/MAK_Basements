@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import "../App.css";
 
 class Hamburger extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       isOpen: true,
+//     };
+//   }
   showSettings(event) {
     event.preventDefault();
   }
@@ -11,8 +17,12 @@ class Hamburger extends Component {
   render() {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
-      <Menu width={"200px"}>
-        <Link className="burgerLink" to="/home">
+      <Menu isOpen width={"200px"}>
+        <Link
+          onClick={() => this.closeMenu()}
+          className="burgerLink"
+          to="/home"
+        >
           <p className="linkText">HOME</p>
         </Link>
         <Link className="burgerLink" to="/kitchenettes">

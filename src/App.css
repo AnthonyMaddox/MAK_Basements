@@ -1,3 +1,8 @@
+html,
+body {
+  margin: 0;
+}
+
 .app {
   box-sizing: border-box;
 }
@@ -12,7 +17,7 @@
 .navBar {
   display: flex;
   justify-content: space-between;
-  margin: 10px 5% 10px 5%;
+  /* margin: 10px 5% 10px 5%; */
 }
 .sideNav {
   display: flex;
@@ -60,4 +65,88 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+/* hamburger menu */
+
+.hamDiv {
+  display: none;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  text-decoration: underline;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 24px;
+  right: 36px;
+  top: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #2947ad;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #2947ad;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #2947ad;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: white;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: #2947ad;
+}
+
+/* media queries */
+@media screen and (min-width: 1000px) {
+  .hamDiv {
+    display: inline-block;
+  }
 }

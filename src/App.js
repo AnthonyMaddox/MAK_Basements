@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import Home from "./Components/Home";
 import Kitchenette from "./Components/Kitchenette";
 import Bathroom from "./Components/Bathroom";
+import Hamburger from "./Components/Hamburger";
 import "./App.css";
 import { Route, Link, Redirect } from "react-router-dom";
 import logo from "./Images/MAK_Basement_Logo.jpg";
-import { slide as Menu } from "react-burger-menu";
+// import { slide as Menu } from "react-burger-menu";
 
 //route is telling the app what component to render when something is clicked on (defining path)
 //Link replaces a tag from traditional html (what to click on to go somewhere)
@@ -31,14 +32,9 @@ class App extends Component {
             <Link className="navLink" to="/bathrooms">
               <p className="linkText">BATHROOMS</p>
             </Link>
-            <Menu>
-              <Link className="navLink" to="/kitchenettes">
-                <p className="linkText">KITCHENETTES</p>
-              </Link>
-              <Link className="navLink" to="/bathrooms">
-                <p className="linkText">BATHROOMS</p>
-              </Link>
-            </Menu>
+          </div>
+          <div className="hamDiv">
+            <Hamburger />
           </div>
         </nav>
         <main>

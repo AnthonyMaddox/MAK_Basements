@@ -12,7 +12,7 @@ class Home extends Component {
         <FadeIn transitionDuration={2000} delay={1000}>
           <div className="quote">VISIONS BROUGHT TO LIFE</div>
         </FadeIn>
-        <div className="gallery">
+        <div>
           <FadeIn className="gallery" delay={200} transitionDuration={2000}>
             <ModalImage
               className="pic"

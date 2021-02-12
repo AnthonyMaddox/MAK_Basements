@@ -6,10 +6,10 @@ import Hamburger from "./Components/Hamburger";
 import "./App.css";
 import { Route, Link, Redirect } from "react-router-dom";
 import logo from "./Images/MAK_Basement_Logo.jpg";
-// import { slide as Menu } from "react-burger-menu";
+import HalfBath from "./Components/HalfBath";
+import ThreeQuarterBath from "./Components/ThreeQuarterBath";
+import FullBath from "./Components/FullBath";
 
-//route is telling the app what component to render when something is clicked on (defining path)
-//Link replaces a tag from traditional html (what to click on to go somewhere)
 class App extends Component {
   constructor(props) {
     super(props);
@@ -41,7 +41,22 @@ class App extends Component {
           <Route path="/" render={() => <Redirect to="/home" />} />
           <Route path="/home" component={Home} exact={true} />
           <Route path="/kitchenettes" component={Kitchenette} />
-          <Route path="/bathrooms" component={Bathroom} />
+          <Route path="/bathrooms" component={Bathroom} exact={true} />
+          <Route
+            path="/bathrooms/half_bath"
+            component={HalfBath}
+            exact={true}
+          />
+          <Route
+            path="/bathrooms/three_quarter_bath"
+            component={ThreeQuarterBath}
+            exact={true}
+          />
+          <Route
+            path="/bathrooms/full_bath"
+            component={FullBath}
+            exact={true}
+          />
         </main>
       </div>
     );

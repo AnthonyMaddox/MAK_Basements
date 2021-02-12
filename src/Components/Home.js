@@ -33,6 +33,30 @@ class Home extends Component {
             large={blue_shark}
             hideDownload="true"
           />
+          <ModalImage
+            className="pic"
+            small={blue_shark}
+            large={blue_shark}
+            hideDownload="true"
+          />
+          <ModalImage
+            className="pic"
+            small={blue_shark}
+            large={blue_shark}
+            hideDownload="true"
+          />
+          <ModalImage
+            className="pic"
+            small={blue_shark}
+            large={blue_shark}
+            hideDownload="true"
+          />
+          <ModalImage
+            className="pic"
+            small={blue_shark}
+            large={blue_shark}
+            hideDownload="true"
+          />
         </div>
       </div>
     );

@@ -54,6 +54,13 @@ class Hamburger extends Component {
         >
           <p className="linkText">BATHROOMS</p>
         </Link>
+        <a
+          className="burgerLink"
+          href="https://makhomedesign.com/contact/"
+          target="_blank"
+        >
+          <p className="linkText">CONTACT US</p>
+        </a>
       </Menu>
     );
   }

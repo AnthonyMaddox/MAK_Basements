@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+import { Route, Link, Redirect } from "react-router-dom";
+import "./App.css";
+import logo from "./Images/MAK_Basement_Logo.jpg";
 import Home from "./Components/Home";
 import Kitchenette from "./Components/Kitchenette";
 import Bathroom from "./Components/Bathroom";
 import Hamburger from "./Components/Hamburger";
-import "./App.css";
-import { Route, Link, Redirect } from "react-router-dom";
-import logo from "./Images/MAK_Basement_Logo.jpg";
 import HalfBath from "./Components/HalfBath";
 import ThreeQuarterBath from "./Components/ThreeQuarterBath";
 import FullBath from "./Components/FullBath";
@@ -35,6 +35,13 @@ class App extends Component {
             <Link className="navLink" to="/bathrooms">
               <p className="linkText">BATHROOMS</p>
             </Link>
+            <a
+              className="aLink"
+              href="https://makhomedesign.com/contact/"
+              target="_blank"
+            >
+              <p className="linkText">CONTACT US</p>
+            </a>
           </div>
           <div className="hamDiv">
             <Hamburger />
@@ -43,13 +50,9 @@ class App extends Component {
         <main>
           <Route path="/" render={() => <Redirect to="/home" />} />
           <Route path="/home" component={Home} exact={true} />
-          <Route path="/kitchenettes" component={Kitchenette} exact={true}/>
+          <Route path="/kitchenettes" component={Kitchenette} exact={true} />
           <Route path="/bathrooms" component={Bathroom} exact={true} />
-          <Route
-            path="/bathrooms/half"
-            component={HalfBath}
-            exact={true}
-          />
+          <Route path="/bathrooms/half" component={HalfBath} exact={true} />
           <Route
             path="/bathrooms/three_quarter"
             component={ThreeQuarterBath}

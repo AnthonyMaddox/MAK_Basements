@@ -9,6 +9,9 @@ import logo from "./Images/MAK_Basement_Logo.jpg";
 import HalfBath from "./Components/HalfBath";
 import ThreeQuarterBath from "./Components/ThreeQuarterBath";
 import FullBath from "./Components/FullBath";
+import SmallKitchenette from "./Components/SmallKitchenette";
+import MediumKitchenette from "./Components/MediumKitchenette";
+import LargeKitchenette from "./Components/LargeKitchenette";
 
 class App extends Component {
   constructor(props) {
@@ -40,21 +43,32 @@ class App extends Component {
         <main>
           <Route path="/" render={() => <Redirect to="/home" />} />
           <Route path="/home" component={Home} exact={true} />
-          <Route path="/kitchenettes" component={Kitchenette} />
+          <Route path="/kitchenettes" component={Kitchenette} exact={true}/>
           <Route path="/bathrooms" component={Bathroom} exact={true} />
           <Route
-            path="/bathrooms/half_bath"
+            path="/bathrooms/half"
             component={HalfBath}
             exact={true}
           />
           <Route
-            path="/bathrooms/three_quarter_bath"
+            path="/bathrooms/three_quarter"
             component={ThreeQuarterBath}
             exact={true}
           />
+          <Route path="/bathrooms/full" component={FullBath} exact={true} />
           <Route
-            path="/bathrooms/full_bath"
-            component={FullBath}
+            path="/kitchenettes/small"
+            component={SmallKitchenette}
+            exact={true}
+          />
+          <Route
+            path="/kitchenettes/medium"
+            component={MediumKitchenette}
+            exact={true}
+          />
+          <Route
+            path="/kitchenettes/large"
+            component={LargeKitchenette}
             exact={true}
           />
         </main>

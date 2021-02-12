@@ -8,6 +8,7 @@ class Home extends Component {
     return (
       <div className="homePage">
         <div className="titleBar">BASEMENTS</div>
+        <div className="quote">VISIONS BROUGHT TO LIFE</div>
         <div className="gallery">
           <ModalImage
             className="pic"

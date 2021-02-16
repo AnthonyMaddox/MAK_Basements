@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Route, Link, Redirect } from "react-router-dom";
 import "./App.css";
 import logo from "./Images/MAK_Basement_Logo.jpg";
+import background from "./Images/basement_bg_bw.jpg"
 import Home from "./Components/Home";
+import Footer from "./Components/Footer";
 import Kitchenette from "./Components/Kitchenette";
 import Bathroom from "./Components/Bathroom";
 import Hamburger from "./Components/Hamburger";
@@ -18,7 +20,6 @@ class App extends Component {
     super(props);
     this.state = {};
   }
-
   render() {
     return (
       <div className="app">
@@ -40,7 +41,7 @@ class App extends Component {
               href="https://makhomedesign.com/contact/"
               target="_blank"
             >
-              <p className="linkText">CONTACT US</p>
+              <p className="alinkText">CONTACT US</p>
             </a>
           </div>
           <div className="hamDiv">
@@ -75,6 +76,7 @@ class App extends Component {
             exact={true}
           />
         </main>
+        <Footer />
       </div>
     );
   }

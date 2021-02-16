@@ -5,6 +5,8 @@ body {
 
 .app {
   box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
 }
 
 /* nav bar */
@@ -15,6 +17,7 @@ body {
   object-fit: cover;
 }
 .navBar {
+  height: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -37,25 +40,40 @@ body {
   font-size: 14px;
   padding: 2px;
 }
+
 .linkText:hover {
   border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
   color: white;
   background-color: #2947ad;
 }
+
+/* contact link */
+
 .aLink {
   text-decoration: none;
   font-weight: bold;
   background-color: #2947ad;
-  padding: 10px 10px 0 10px;
+  padding: 12px 10px 0 10px;
+  font-size: 14px;
 }
+.aLink:hover {
+  opacity: 0.8;
+}
+
 .aLink:visited {
   color: white;
 }
+
 /* home page */
+
 .quote {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 200;
   text-align: center;
   font-style: italic;
+  margin-bottom: 10px;
 }
 .homepage {
   display: flex;
@@ -63,6 +81,7 @@ body {
 }
 .titleBar {
   height: 25px;
+  padding: 2px 0 2px 0;
   width: 100%;
   color: white;
   background-color: #2947ad;
@@ -92,7 +111,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 5%;
+  padding: 5px 5% 25px 5%;
 }
 
 /* hamburger menu */
@@ -174,12 +193,130 @@ body {
   background: #2947ad;
 }
 
+/* footer */
+
+main {
+  padding-bottom: 9rem;
+}
+/* main::after {
+    content: "";
+    background: url("./Images/basement_bg_bw.jpg");
+    opacity: 0.4;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+  } */
+
+.footerDiv {
+  background-color: #2947ad;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-around;
+}
+.footLogoDiv {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  height: 7rem;
+}
+.footLogo {
+  top: 1rem;
+  height: 3rem;
+  object-fit: cover;
+}
+.fbPara {
+  color: white;
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 8px;
+}
+.fbDiv {
+  text-decoration: none;
+  display: flex;
+}
+.fbPara:visited {
+  color: white;
+  text-decoration: none;
+}
+.fbLogo {
+  margin: 5px 8px 0 0;
+  height: 2rem;
+}
+.footMapDiv {
+  display: flex;
+  text-decoration: none;
+}
+.footMapLogo {
+  margin-top: 2rem;
+  height: 2rem;
+}
+.addressDiv {
+  color: white;
+  margin: 30px 0 0 10px;
+}
+
+.resources {
+  color: white;
+  font-size: 12px;
+}
+
+li {
+  list-style-type: none;
+}
+.footLink {
+  text-decoration: none;
+  padding: 2px;
+  color: white;
+  text-decoration: none;
+}
+.footLink:hover {
+  color: black;
+  text-decoration: none;
+}
+.addressDiv:hover {
+  color: black;
+}
+
 /* media queries */
+@media screen and (max-width: 720px) {
+  main {
+    padding-bottom: 18rem;
+  }
+  .footerDiv {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .footLogoDiv {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 6rem;
+  }
+  .footMapDiv {
+    margin: -30px 0 5px 1rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .hamDiv {
     display: block;
   }
   .sideNav {
     display: none;
+  }
+  .addressDiv {
+    font-size: 12px;
+  }
+  .resources {
+    font-size: 10px;
+  }
+  .footLink {
+    font-size: 14px;
   }
 }

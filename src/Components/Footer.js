@@ -4,7 +4,7 @@ import logo from "../Images/MAK_Logo-Reverse.png";
 import mapIcon from "../Images/map_icon.png";
 import fbIcon from "../Images/fb.png";
 import { Link } from "react-router-dom";
-// import GoogleMap from "./MyMapComponent";
+import MyMap from "./MyMapComponent";
 
 class Footer extends Component {
   render() {
@@ -69,6 +69,7 @@ class Footer extends Component {
               10903 Indian Head Hwy, Suite 104 <br></br>Fort Washington, MD
               20744
             </p>
+            <MyMap />
           </a>
         </div>
 

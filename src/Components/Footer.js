@@ -69,13 +69,9 @@ class Footer extends Component {
               10903 Indian Head Hwy, Suite 104 <br></br>Fort Washington, MD
               20744
             </p>
-            <MyMap />
+            {/* <MyMap /> */}
           </a>
         </div>
-
-        {/* <div className="googleMapDiv">
-          <GoogleMap />
-        </div> */}
       </div>
     );
   }

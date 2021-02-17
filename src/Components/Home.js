@@ -10,7 +10,7 @@ class Home extends Component {
       <div className="homePage">
         <div className="titleBar">BASEMENTS</div>
         <FadeIn transitionDuration={2000} delay={1000}>
-          <div className="quote">VISIONS BROUGHT TO LIFE</div>
+          <div className="quote">Your Vision Made Clear</div>
         </FadeIn>
         <div>
           <FadeIn className="gallery" delay={200} transitionDuration={2000}>

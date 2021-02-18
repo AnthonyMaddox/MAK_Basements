@@ -26,14 +26,14 @@ class Footer extends Component {
             </a>
           </div>
         </div>
-        <div>
+        <div className="resDiv">
           <ul>
             <li>
               <p className="resources">RESOURCES</p>
             </li>
             <li>
               <Link className="footLink" to="/home">
-                BASEMENTS HOME
+                HOME
               </Link>
             </li>
 
@@ -69,8 +69,10 @@ class Footer extends Component {
               10903 Indian Head Hwy, Suite 104 <br></br>Fort Washington, MD
               20744
             </p>
-            {/* <MyMap /> */}
           </a>
+          <div className="myMapDiv">
+            <MyMap />
+          </div>
         </div>
       </div>
     );

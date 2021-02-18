@@ -54,8 +54,8 @@ body {
 .aLink {
   text-decoration: none;
   font-weight: bold;
-  background-color: #2947ad;
-  /* background-color: #00244b; */
+  /* background-color: #2947ad; */
+  background-color: #00244b;
   padding: 12px 10px 0 10px;
   font-size: 14px;
 }
@@ -86,8 +86,8 @@ body {
   padding: 2px 0 2px 0;
   width: 100%;
   color: white;
-  background-color: #2947ad;
-  /* background-image: linear-gradient(to right, #2947ad, #00244b); */
+  /* background-color: #2947ad; */
+  background-image: linear-gradient(to right, #2947ad, #00244b); 
   font-size: 125%;
   margin-bottom: 15px;
   text-align: center;
@@ -201,7 +201,7 @@ body {
 main {
   padding-bottom: 10rem;
 }
-/* main::after {
+main::after {
     content: "";
     background: url("./Images/basement_bg_bw.jpg");
     opacity: 0.4;
@@ -213,11 +213,11 @@ main {
     z-index: -1;
     background-position: center;
     background-size: cover;
-  } */
+  }
 
 .footerDiv {
-  /* background-image: linear-gradient(to bottom, #2947ad, #00244b); */
-  background-color: #2947ad;
+  background-image: linear-gradient(to bottom, #2947ad, #00244b);
+  /* background-color: #2947ad; */
   position: absolute;
   bottom: 0;
   width: 100%;

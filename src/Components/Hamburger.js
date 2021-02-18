@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { slide as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -7,7 +7,7 @@ class Hamburger extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuOpen: true,
+      menuOpen: false,
     };
     // this.handleStateChange = this.handleStateChange.bind(this);
     // this.closeMenu = this.closeMenu.bind(this);
@@ -17,7 +17,7 @@ class Hamburger extends Component {
     this.setState({ menuOpen: state.isOpen });
   }
   closeMenu() {
-    this.setState({ menuOpen: true });
+    this.setState({ menuOpen: false });
   }
   toggleMenu() {
     this.setState((state) => ({ menuOpen: !state.menuOpen }));
@@ -29,16 +29,14 @@ class Hamburger extends Component {
   render() {
     return (
       <Menu
+        disableAutoFocus
+        right
         isOpen={this.state.menuOpen}
         onStateChange={(state) => this.handleStateChange(state)}
         width={"200px"}
       >
-        <Link
-          onClick={() => this.closeMenu()}
-          className="burgerLink"
-          to="/home"
-        >
-          <p className="linkText">HOME</p>
+        <Link onClick={() => this.closeMenu()} to="/home">
+          <p className="burgerHomeLink">HOME</p>
         </Link>
         <Link
           onClick={() => this.closeMenu()}

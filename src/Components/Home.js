@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import blue_shark from "../Images/blue_shark.JPG";
 import "../App.css";
 import ModalImage from "react-modal-image";
+import FsLightbox from 'fslightbox-react';
 import FadeIn from "react-fade-in";
+import LightBox from "./LightBox"
 
 class Home extends Component {
+    
   render() {
     return (
       <div className="homePage">
@@ -63,6 +66,7 @@ class Home extends Component {
               hideDownload="true"
             />
           </FadeIn>
+        <LightBox/>
         </div>
       </div>
     );

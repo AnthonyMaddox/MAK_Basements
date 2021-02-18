@@ -1,0 +1,112 @@
+/* footer */
+
+main {
+  padding-bottom: 18rem;
+}
+main::after {
+  content: "";
+  background: url("./Images/basement_bg_bw.jpg");
+  opacity: 0.4;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+}
+
+.footerDiv {
+  background-image: linear-gradient(to bottom, #2947ad, #00244b);
+  /* background-color: #2947ad; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  justify-content: space-around;
+}
+.footLogoDiv {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  height: 8rem;
+}
+.footLogo {
+  top: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+.fbPara {
+  color: white;
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 8px;
+}
+.fbPara:visited {
+  color: white;
+  text-decoration: none;
+}
+.fbPara:hover {
+  color: black;
+}
+.fbDiv {
+  text-decoration: none;
+  display: flex;
+}
+
+.fbLogo {
+  margin: 5px 8px 0 0;
+  height: 2rem;
+}
+.footMapDiv {
+  display: flex;
+  text-decoration: none;
+}
+.footMapLogo {
+  margin-top: 2rem;
+  height: 2rem;
+}
+.addressDiv {
+  color: white;
+  font-size: 14px;
+  margin: 30px 0 0 10px;
+}
+.google-map-code {
+  line-height: 0;
+  margin: 15px 0 0 30px;
+  -webkit-box-shadow: 5px 5px 0px 0px black;
+  box-shadow: 5px 5px 0px 0px black;
+}
+.resDiv {
+  margin-top: 2rem;
+}
+.resources {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 5px;
+}
+li {
+  list-style-type: none;
+}
+.footLink {
+  line-height: 1.5;
+  text-decoration: none;
+  padding: 2px;
+  color: white;
+  text-decoration: none;
+}
+.footLink:hover {
+  color: black;
+  text-decoration: none;
+}
+.addressDiv:hover {
+  color: black;
+}
+.houzzDiv {
+  margin: 35px -100px 0 100px;
+}
+.houzzPic {
+  height: 50px;
+}

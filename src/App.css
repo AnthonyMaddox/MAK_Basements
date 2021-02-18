@@ -75,7 +75,7 @@ body {
   text-align: center;
   font-style: italic;
   margin-bottom: 10px;
-  color: #072854;
+  color: #00244b;
 }
 .homepage {
   display: flex;
@@ -107,8 +107,8 @@ body {
   margin: 10px;
 }
 .pic:hover {
-  -webkit-box-shadow: 1px 1px 11px 1px black;
-  box-shadow: 1px 1px 11px 1px black;
+  -webkit-box-shadow: 1px 1px 11px 1px #00244b;
+  box-shadow: 1px 1px 11px 1px #00244b;
 }
 .gallery {
   display: flex;
@@ -117,7 +117,7 @@ body {
   padding: 5px 5% 100px 5%;
 }
 
-/* hamburger menu */
+/* -----------------hamburger menu----------------- */
 
 .hamDiv {
   display: none;
@@ -144,13 +144,19 @@ body {
 
 /* Change color on hover */
 
-.bm-item:hover {
+.burgerHomeLink:hover {
   text-decoration: underline;
 }
+/* .bm-item:hover {
+  text-decoration: underline;
+} */
+.bm-item:focus {
+  outline: none;
+}
 
-/* Position and sizing of burger button */
+/* Position and sizing of burger button  */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 30px;
   height: 24px;
   right: 36px;
@@ -159,6 +165,11 @@ body {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
+  background: #00244b;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
   background: #2947ad;
 }
 
@@ -173,9 +184,18 @@ body {
   background: white;
 }
 
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
 /* General sidebar styles */
 .bm-menu {
-  background: #2947ad;
+  background-image: linear-gradient(to top left, #2947ad, #00244b);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -190,116 +210,15 @@ body {
   color: white;
   overflow-y: hidden;
 }
+/* .bm-item-list:focus {
+  outline: none;
+} */
 
 /* Styling of overlay */
 .bm-overlay {
-  background: #2947ad;
 }
 
-/* footer */
-
-main {
-  padding-bottom: 20rem;
-}
-main::after {
-  content: "";
-  background: url("./Images/basement_bg_bw.jpg");
-  opacity: 0.4;
-  top: 70px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  background-position: center;
-  background-size: cover;
-}
-
-.footerDiv {
-  background-image: linear-gradient(to bottom, #2947ad, #00244b);
-  /* background-color: #2947ad; */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 20rem;
-  display: flex;
-  justify-content: space-around;
-}
-.footLogoDiv {
-  margin-top: 3rem;
-  margin-left: 1rem;
-  height: 8rem;
-}
-.footLogo {
-  top: 3rem;
-  height: 3rem;
-  object-fit: cover;
-}
-.fbPara {
-  color: white;
-  font-style: italic;
-  font-size: 10px;
-  margin-top: 8px;
-}
-.fbPara:visited {
-  color: white;
-  text-decoration: none;
-}
-.fbPara:hover {
-  color: black;
-}
-.fbDiv {
-  text-decoration: none;
-  display: flex;
-}
-
-.fbLogo {
-  margin: 5px 8px 0 0;
-  height: 2rem;
-}
-.footMapDiv {
-  display: flex;
-  text-decoration: none;
-}
-.footMapLogo {
-  margin-top: 2rem;
-  height: 2rem;
-}
-.addressDiv {
-  color: white;
-  margin: 30px 0 0 10px;
-}
-.myMapDiv {
-  margin: 15px 0 0 30px;
-  -webkit-box-shadow: 1px 1px 11px 1px black;
-  box-shadow: 1px 1px 11px 1px black;
-}
-.resDiv {
-  margin-top: 2rem;
-}
-.resources {
-  color: white;
-  font-size: 12px;
-  margin-left: 5px;
-}
-
-li {
-  list-style-type: none;
-}
-.footLink {
-  line-height: 1.5;
-  text-decoration: none;
-  padding: 2px;
-  color: white;
-  text-decoration: none;
-}
-.footLink:hover {
-  color: black;
-  text-decoration: none;
-}
-.addressDiv:hover {
-  color: black;
-}
+/* modal */
 
 /* media queries */
 @media screen and (max-width: 720px) {

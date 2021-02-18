@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, Link, Redirect } from "react-router-dom";
 import "./App.css";
+import "./Footer.css";
 import logo from "./Images/MAK_Basement_Logo.jpg";
 // import background from "./Images/basement_bg_bw.jpg"
 import Home from "./Components/Home";
@@ -22,7 +23,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="app">
+      <div className="app" >
         <nav className="navBar">
           <Link className="navLink" to="/home">
             <div className="logoDiv">
@@ -45,10 +46,11 @@ class App extends Component {
             </a>
           </div>
           <div className="hamDiv">
-            <Hamburger />
+            <Hamburger
+            />
           </div>
         </nav>
-        <main>
+        <main id="page-wrap">
           <Route path="/" render={() => <Redirect to="/home" />} />
           <Route path="/home" component={Home} exact={true} />
           <Route path="/kitchenettes" component={Kitchenette} exact={true} />

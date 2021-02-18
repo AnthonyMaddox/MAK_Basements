@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import "../App.css";
+import "../Footer.css";
 import logo from "../Images/MAK_Logo-Reverse.png";
 import mapIcon from "../Images/map_icon.png";
 import fbIcon from "../Images/fb.png";
 import { Link } from "react-router-dom";
 import MyMap from "./MyMapComponent";
+import houzz1 from "../Images/houzz1.png";
+import houzz2 from "../Images/houzz2.png";
+import houzz3 from "../Images/houzz3.png";
+import houzz4 from "../Images/houzz4.png";
 
 class Footer extends Component {
   render() {
@@ -24,6 +29,17 @@ class Footer extends Component {
               <img className="fbLogo" src={fbIcon} />
               <p className="fbPara">find us on facebook!</p>
             </a>
+            <div className="houzzDiv">
+              <a
+                href="https://www.houzz.com/professionals/kitchen-and-bath-remodelers/m-a-k-remodeling-services-pfvwus-pf~378646932?"
+                target="_blank"
+              >
+                <img className="houzzPic" src={houzz1} alt="houzz1" />
+                <img className="houzzPic" src={houzz2} alt="houzz2" />
+                <img className="houzzPic" src={houzz3} alt="houzz3" />
+                <img className="houzzPic" src={houzz4} alt="houzz4" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="resDiv">
@@ -70,9 +86,7 @@ class Footer extends Component {
               20744
             </p>
           </a>
-          <div className="myMapDiv">
-            <MyMap />
-          </div>
+          <MyMap />
         </div>
       </div>
     );

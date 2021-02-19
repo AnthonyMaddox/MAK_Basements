@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../App.css";
 import "../Footer.css";
+import "../App.css";
 import logo from "../Images/MAK_Logo-Reverse.png";
 import mapIcon from "../Images/map_icon.png";
 import fbIcon from "../Images/fb.png";

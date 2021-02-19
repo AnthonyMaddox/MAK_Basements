@@ -221,24 +221,7 @@ body {
 /* modal */
 
 /* media queries */
-@media screen and (max-width: 720px) {
-  main {
-    padding-bottom: 18rem;
-  }
-  .footerDiv {
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .footLogoDiv {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    height: 6rem;
-  }
-  .footMapDiv {
-    margin: -30px 0 5px 1rem;
-  }
-}
+
 @media screen and (max-width: 1000px) {
   .hamDiv {
     display: block;

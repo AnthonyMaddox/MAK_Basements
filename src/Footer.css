@@ -110,3 +110,59 @@ li {
 .houzzPic {
   height: 50px;
 }
+
+@media screen and (max-width: 720px) {
+  main {
+    padding-bottom: 28rem;
+  }
+  .footerDiv {
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .footLogoDiv {
+    margin-top: -1rem;
+    margin-left: 1rem;
+    height: 6rem;
+  }
+  .footMapDiv {
+    margin: -30px 0 5px 1rem;
+  }
+  .houzzDiv {
+    margin: 0px -70px 0 70px;
+  }
+  .footMapDiv {
+    margin: -230px 0 0 130px;
+  }
+  .addressDiv {
+    font-size: 10px;
+    margin: 30px 0 0 10px;
+  }
+  .google-map-code {
+    margin: 15px 0 0 140px;
+    -webkit-box-shadow: none;
+    box-shadow: none
+  }
+  iframe {
+    width: 210px;
+    height: 160px;
+  }
+  .resDiv {
+    margin: -10px 0 0 -20px; 
+  }
+  .resources {
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  li {
+    list-style-type: none;
+  }
+  .footLink {
+    font-size: 12px;
+  }
+  hr {
+      width: 200px;
+  }
+}

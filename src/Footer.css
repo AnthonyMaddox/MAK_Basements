@@ -72,7 +72,9 @@ main::after {
   font-size: 14px;
   margin: 30px -10px 0 10px;
 }
+
 .google-map-code {
+  width: 260px;
   line-height: 0;
   margin: 15px -30px 0 30px;
   -webkit-box-shadow: 5px 5px 0px 0px black;
@@ -105,6 +107,7 @@ li {
   color: black;
 }
 .houzzDiv {
+    width: fit-content;
   margin: 35px -100px 0 100px;
 }
 .houzzPic {
@@ -151,11 +154,13 @@ li {
     height: 28rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .footLogoDiv {
     margin-top: -1rem;
   }
   .footMapDiv {
+    width: fit-content;
     margin: -30px -1rem 5px 1rem;
   }
   .houzzDiv {
@@ -166,14 +171,16 @@ li {
   }
   .addressDiv {
     font-size: 10px;
-    margin: 30px 0 0 10px;
+    margin: 30px -10px 0 10px;
   }
   .google-map-code {
+    width: 210px;
     margin: 15px -140px 0 140px;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
   iframe {
+    box-sizing: border-box;
     width: 210px;
     height: 160px;
   }

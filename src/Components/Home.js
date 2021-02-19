@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import blue_shark from "../Images/blue_shark.JPG";
 import "../App.css";
 import ModalImage from "react-modal-image";
-import FsLightbox from 'fslightbox-react';
 import FadeIn from "react-fade-in";
 import LightBox from "./LightBox"
 

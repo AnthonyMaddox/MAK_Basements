@@ -70,11 +70,11 @@ main::after {
 .addressDiv {
   color: white;
   font-size: 14px;
-  margin: 30px 0 0 10px;
+  margin: 30px -10px 0 10px;
 }
 .google-map-code {
   line-height: 0;
-  margin: 15px 0 0 30px;
+  margin: 15px -30px 0 30px;
   -webkit-box-shadow: 5px 5px 0px 0px black;
   box-shadow: 5px 5px 0px 0px black;
 }
@@ -110,8 +110,40 @@ li {
 .houzzPic {
   height: 50px;
 }
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 865px) {
+  main {
+    padding-bottom: 28rem;
+  }
+  .addressDiv {
+    font-size: 10px;
+  }
+  .google-map-code {
+    margin-left: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .resDiv {
+    margin-left: -40px;
+  }
+  .houzzDiv {
+    margin: 0px -70px 0 70px;
+  }
+  iframe {
+    width: 210px;
+    height: 160px;
+  }
+  .resources {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .footMapDiv {
+    margin: 15px 0 5px 0;
+  }
+  .footLink {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
   main {
     padding-bottom: 28rem;
   }
@@ -122,37 +154,33 @@ li {
   }
   .footLogoDiv {
     margin-top: -1rem;
-    margin-left: 1rem;
-    height: 6rem;
   }
   .footMapDiv {
-    margin: -30px 0 5px 1rem;
+    margin: -30px -1rem 5px 1rem;
   }
   .houzzDiv {
     margin: 0px -70px 0 70px;
   }
   .footMapDiv {
-    margin: -230px 0 0 130px;
+    margin: -230px -130px 0 130px;
   }
   .addressDiv {
     font-size: 10px;
     margin: 30px 0 0 10px;
   }
   .google-map-code {
-    margin: 15px 0 0 140px;
+    margin: 15px -140px 0 140px;
     -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
   }
   iframe {
     width: 210px;
     height: 160px;
   }
   .resDiv {
-    margin: -10px 0 0 -20px; 
+    margin: -10px 0 0 -20px;
   }
   .resources {
-    color: white;
-    font-weight: bold;
     font-size: 10px;
     margin-left: 5px;
   }
@@ -163,6 +191,7 @@ li {
     font-size: 12px;
   }
   hr {
-      width: 200px;
+    margin-left: 0px;
+    width: 275px;
   }
 }

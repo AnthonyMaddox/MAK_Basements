@@ -222,6 +222,14 @@ body {
 
 /* modal */
 
+.lbPic {
+  height: 100px;
+  width: 100px;
+}
+.scale-in-long {
+  
+}
+
 /* media queries */
 
 @media screen and (max-width: 1000px) {

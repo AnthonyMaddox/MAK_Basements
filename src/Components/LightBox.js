@@ -41,7 +41,7 @@ function LightBox() {
         sources={[blue_shark, bg]}
         thumbs={[blue_shark, bg]}
         initialAnimation="scale-in-long"
-        slideChangeAnimation="scale-in"
+        slideChangeAnimation="fslightbox-fade-out-class"
         slide={lightboxController.slide}
       />
     </>

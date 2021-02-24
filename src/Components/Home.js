@@ -15,7 +15,7 @@ class Home extends Component {
           <div className="quote">Your Vision Made Clear</div>
         </FadeIn>
         <div>
-          <FadeIn className="gallery" delay={200} transitionDuration={2000}>
+          {/* <FadeIn className="gallery" delay={200} transitionDuration={2000}>
             <ModalImage
               className="pic"
               small={blue_shark}
@@ -64,7 +64,7 @@ class Home extends Component {
               large={blue_shark}
               hideDownload="true"
             />
-          </FadeIn>
+          </FadeIn> */}
         <LightBox/>
         </div>
       </div>

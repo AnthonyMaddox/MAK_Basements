@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px;
+}
+.img-item {
+  flex: 0 0 31%; /* tweak the thrid value to adjust the vertical gutters */
+  /* background: #fff; */
+  margin-bottom: 20px;
+}
+/* .img-wrap {
+  object-fit: cover;
+} */
+.img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.img-hover-zoom {
+  /* height: 300px; [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+@media (max-width: 640px) {
+  .img-item {
+    flex: 0 0 48%; /* 2 across */
+  }
+}
+@media (max-width: 480px) {
+  .img-item {
+    flex: 0 0 100%; /* 1 accross */
+  }
+}

@@ -103,21 +103,21 @@ body {
 /* picture gallery */
 
 .pic {
-  height: 120px;
-  width: 200px;
-  object-fit: cover;
-  margin: 10px;
-}
-.pic:hover {
-  -webkit-box-shadow: 1px 1px 11px 1px #00244b;
-  box-shadow: 1px 1px 11px 1px #00244b;
-}
-.gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 5px 5% 100px 5%;
-}
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  .pic:hover {
+    -webkit-box-shadow: 1px 1px 11px 1px #00244b;
+    box-shadow: 1px 1px 11px 1px #00244b;
+  }
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px 5% 100px 5%;
+  }
 
 /* -----------------hamburger menu----------------- */
 
@@ -217,17 +217,14 @@ body {
 } */
 
 /* Styling of overlay */
-.bm-overlay {
-}
+/* .bm-overlay {
+} */
 
 /* modal */
 
 .lbPic {
   height: 100px;
   width: 100px;
-}
-.scale-in-long {
-  
 }
 
 /* media queries */

@@ -22,15 +22,15 @@ main::after {
   /* background-color: #2947ad; */
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 18rem;
   display: flex;
   justify-content: space-around;
 }
 .footLogoDiv {
   margin-top: 2rem;
-  margin-left: 1rem;
   height: 8rem;
+  width: fit-content;
 }
 .footLogo {
   top: 3rem;
@@ -62,6 +62,7 @@ main::after {
 .footMapDiv {
   display: flex;
   text-decoration: none;
+  width: fit-content;
 }
 .footMapLogo {
   margin-top: 2rem;
@@ -71,14 +72,16 @@ main::after {
   color: white;
   font-size: 14px;
   margin: 30px -10px 0 10px;
+  width: fit-content;
 }
 
 .google-map-code {
   width: 260px;
   line-height: 0;
-  margin: 15px -30px 0 30px;
+  margin: 15px -10px 0 10px;
   -webkit-box-shadow: 5px 5px 0px 0px black;
   box-shadow: 5px 5px 0px 0px black;
+  width: fit-content;
 }
 .resDiv {
   margin-top: 3rem;
@@ -108,15 +111,15 @@ li {
 }
 .houzzDiv {
   width: fit-content;
-  margin: 35px -100px 0 100px;
+  margin: 35px -80px 0 80px;
 }
 .houzzPic {
-  height: 50px;
+  height: 60px;
 }
 .houzzWrap {
   display: flex;
 }
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 880px) {
   main {
     padding-bottom: 28rem;
   }
@@ -124,15 +127,15 @@ li {
     font-size: 10px;
   }
   .google-map-code {
-    margin-left: 0px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    margin-left: -5px;
+    /* -webkit-box-shadow: none;
+    box-shadow: none; */
   }
   .resDiv {
     margin-left: -40px;
   }
   .houzzDiv {
-    margin: 0px -70px 0 70px;
+    margin: 15px -70px 0 50px;
   }
   iframe {
     width: 210px;
@@ -148,17 +151,20 @@ li {
   .footLink {
     font-size: 12px;
   }
+  .houzzPic {
+    height: 48px;
+  }
+  .footMapLogo {
+    margin-left: -10px;
+  }
 }
 @media screen and (max-width: 650px) {
-  main {
-    padding-bottom: 28rem;
-  }
   .footerDiv {
     height: 28rem;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    width: 100%;
+    padding-left: 15%;
   }
   .footLogo {
     top: 3rem;
@@ -173,10 +179,10 @@ li {
     margin: -30px -1rem 5px 1rem;
   }
   .houzzDiv {
-    margin: 70px -230px 0 230px;
+    margin: 50px 0px 0 280px;
   }
   .footMapDiv {
-    margin: -200px 0px 0 15px;
+    margin: -200px 0px 0 0px;
   }
   .addressDiv {
     font-size: 10px;
@@ -185,15 +191,14 @@ li {
   .google-map-code {
     width: 210px;
     margin: 15px -20px 0 20px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
   }
   iframe {
     width: 210px;
     height: 160px;
   }
   .resDiv {
-    margin: -270px -210px 0 210px;
+    margin: -290px -240px 0 240px;
+    width: fit-content;
   }
   .resources {
     font-size: 10px;
@@ -209,8 +214,80 @@ li {
     margin-left: 0px;
     width: 200px;
   }
+  .footMapLogo {
+    margin-left: 0px;
+  }
 
   .houzzWrap {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footerDiv {
+    padding-left: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .houzzDiv {
+    margin: 70px -260px 0 260px;
+  }
+  .resDiv {
+    margin: -290px -220px 0 220px;
+    width: fit-content;
+  }
+  .footerDiv {
+    padding-left: 6%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .houzzDiv {
+    margin: 70px -250px 0 250px;
+  }
+  .resDiv {
+    margin: -290px -215px 0 215px;
+  }
+  .footerDiv {
+    padding-left: 2%;
+  }
+}
+@media screen and (max-width: 361px) {
+  .houzzDiv {
+    margin: 70px -250px 0 250px;
+  }
+  .resDiv {
+    margin: -290px -205px 0 205px;
+  }
+  .footerDiv {
+    padding-left: 0.5%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .houzzDiv {
+    margin: 50px -250px 0 250px;
+  }
+  .resDiv {
+    margin: -290px -185px 0 185px;
+  }
+  .houzzTop {
+    display: flex;
+    flex-direction: column;
+  }
+  .houzzBottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .houzzPic {
+    width: 40px;
+    height: auto;
+  }
+  .resources {
+    font-size: 9px;
+  }
+  .footLink {
+    font-size: 10px;
+  }
+  .logoImg {
+    margin-top: 8px;
+    height: 32px;
   }
 }

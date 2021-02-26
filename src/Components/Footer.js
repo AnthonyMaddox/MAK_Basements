@@ -10,6 +10,7 @@ import houzz1 from "../Images/houzz1.png";
 import houzz2 from "../Images/houzz2.png";
 import houzz3 from "../Images/houzz3.png";
 import houzz4 from "../Images/houzz4.png";
+import houzz2021 from "../Images/houzz2021.png";
 
 class Footer extends Component {
   render() {
@@ -36,12 +37,15 @@ class Footer extends Component {
               >
                 <div className="houzzWrap">
                   <div>
-                    <img className="houzzPic" src={houzz1} alt="houzz1" />
-                    <img className="houzzPic" src={houzz2} alt="houzz2" />
+                    <img className="houzzPic" src={houzz2021} alt="houzz2021" />
                   </div>
-                  <div>
-                    <img className="houzzPic" src={houzz3} alt="houzz3" />
-                    <img className="houzzPic" src={houzz4} alt="houzz4" />
+                  <div className="houzzTop">
+                    <img className="houzzPic" src={houzz4} alt="houzz1" />
+                    <img className="houzzPic" src={houzz3} alt="houzz2" />
+                  </div>
+                  <div className="houzzBottom">
+                    <img className="houzzPic" src={houzz2} alt="houzz3" />
+                    <img className="houzzPic" src={houzz1} alt="houzz4" />
                   </div>
                 </div>
               </a>

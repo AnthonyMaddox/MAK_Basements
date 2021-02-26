@@ -1,14 +1,14 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
-  padding: 20px;
+  padding: 20px 30px;
 }
 .img-item {
-  flex: 0 0 31%; /* tweak the thrid value to adjust the vertical gutters */
+  flex: 0.1 0 24%; /* tweak the thrid value to adjust the vertical gutters */
   /* background: #fff; */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* .img-wrap {
   object-fit: cover;
@@ -19,7 +19,8 @@
 }
 
 .img-hover-zoom {
-  /* height: 300px; [1.1] Set it as per your need */
+  /* height: 300px; */
+  /* [1.1] Set it as per your need  */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
@@ -32,13 +33,24 @@
 .img-hover-zoom:hover img {
   transform: scale(1.5);
 }
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
   .img-item {
-    flex: 0 0 48%; /* 2 across */
+    flex: 0.2 10 31%; /* 3 across */
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 740px) {
+  .img-item {
+    flex: 0.1 0 48%; /* 2 across */
+  }
+  .wrapper {
+    padding: 10px;
+  }
+}
+@media (max-width: 370px) {
   .img-item {
     flex: 0 0 100%; /* 1 accross */
+  }
+  .wrapper {
+    padding: 15px;
   }
 }

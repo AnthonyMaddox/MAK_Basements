@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import blue_shark from "../Images/blue_shark.JPG";
 import "../App.css";
-import ModalImage from "react-modal-image";
 import FadeIn from "react-fade-in";
 import LightBox from "./LightBox"
 
@@ -15,56 +13,6 @@ class Home extends Component {
           <div className="quote">Your Vision Made Clear</div>
         </FadeIn>
         <div>
-          {/* <FadeIn className="gallery" delay={200} transitionDuration={2000}>
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-            <ModalImage
-              className="pic"
-              small={blue_shark}
-              large={blue_shark}
-              hideDownload="true"
-            />
-          </FadeIn> */}
         <LightBox/>
         </div>
       </div>

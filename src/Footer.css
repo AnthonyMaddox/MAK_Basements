@@ -107,11 +107,14 @@ li {
   color: black;
 }
 .houzzDiv {
-    width: fit-content;
+  width: fit-content;
   margin: 35px -100px 0 100px;
 }
 .houzzPic {
   height: 50px;
+}
+.houzzWrap {
+  display: flex;
 }
 @media screen and (max-width: 865px) {
   main {
@@ -154,7 +157,13 @@ li {
     height: 28rem;
     display: flex;
     flex-direction: column;
+    align-content: center;
     width: 100%;
+  }
+  .footLogo {
+    top: 3rem;
+    height: 2rem;
+    object-fit: cover;
   }
   .footLogoDiv {
     margin-top: -1rem;
@@ -164,10 +173,10 @@ li {
     margin: -30px -1rem 5px 1rem;
   }
   .houzzDiv {
-    margin: 0px -70px 0 70px;
+    margin: 70px -230px 0 230px;
   }
   .footMapDiv {
-    margin: -230px -130px 0 130px;
+    margin: -200px 0px 0 15px;
   }
   .addressDiv {
     font-size: 10px;
@@ -175,7 +184,7 @@ li {
   }
   .google-map-code {
     width: 210px;
-    margin: 15px -140px 0 140px;
+    margin: 15px -20px 0 20px;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -184,7 +193,7 @@ li {
     height: 160px;
   }
   .resDiv {
-    margin: -10px 0 0 -20px;
+    margin: -270px -210px 0 210px;
   }
   .resources {
     font-size: 10px;
@@ -198,6 +207,10 @@ li {
   }
   hr {
     margin-left: 0px;
-    width: 275px;
+    width: 200px;
+  }
+
+  .houzzWrap {
+    flex-direction: column;
   }
 }

@@ -34,10 +34,16 @@ class Footer extends Component {
                 href="https://www.houzz.com/professionals/kitchen-and-bath-remodelers/m-a-k-remodeling-services-pfvwus-pf~378646932?"
                 target="_blank"
               >
-                <img className="houzzPic" src={houzz1} alt="houzz1" />
-                <img className="houzzPic" src={houzz2} alt="houzz2" />
-                <img className="houzzPic" src={houzz3} alt="houzz3" />
-                <img className="houzzPic" src={houzz4} alt="houzz4" />
+                <div className="houzzWrap">
+                  <div>
+                    <img className="houzzPic" src={houzz1} alt="houzz1" />
+                    <img className="houzzPic" src={houzz2} alt="houzz2" />
+                  </div>
+                  <div>
+                    <img className="houzzPic" src={houzz3} alt="houzz3" />
+                    <img className="houzzPic" src={houzz4} alt="houzz4" />
+                  </div>
+                </div>
               </a>
             </div>
           </div>

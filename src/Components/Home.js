@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <div className="homePage">
         <div className="titleBar">BASEMENTS</div>
-        <FadeIn transitionDuration={2000} delay={1000}>
+        <FadeIn transitionDuration={2000} delay={1300}>
           <div className="quote">Your Vision Made Clear</div>
         </FadeIn>
         <div>

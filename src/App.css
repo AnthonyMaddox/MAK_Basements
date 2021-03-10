@@ -126,7 +126,7 @@ body {
 .phonePara {
   color: #00244b;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 /* bathroom page */
@@ -268,5 +268,11 @@ body {
   .logoImg {
     margin-top: 8px;
     height: 40px;
+  }
+  .phoneLink {
+    font-size: 18px;
+  }
+  .phonePara {
+    font-size: 14px;
   }
 }

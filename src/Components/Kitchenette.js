@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import blue_shark from "../Images/blue_shark.JPG";
 
 class Kitchenette extends Component {
   render() {
@@ -12,19 +11,31 @@ class Kitchenette extends Component {
         <div className="gallery">
           <div>
             <Link className="subLink" to="/kitchenettes/small">
-              <img className="pic" src={blue_shark} alt="small kitchenette" />
+              <img
+                className="pic"
+                src="https://picsum.photos/270/172"
+                alt="small kitchenette"
+              />
               <p>small kitchenette</p>
             </Link>
           </div>
           <div>
             <Link className="subLink" to="/kitchenettes/medium">
-              <img className="pic" src={blue_shark} alt="medium kitchenette" />
+              <img
+                className="pic"
+                src="https://picsum.photos/270/171"
+                alt="medium kitchenette"
+              />
               <p>medium kitchenette</p>
             </Link>
           </div>
           <div>
             <Link className="subLink" to="/kitchenettes/large">
-              <img className="pic" src={blue_shark} alt="large kitchenette" />
+              <img
+                className="pic"
+                src="https://picsum.photos/270/170"
+                alt="large kitchenette"
+              />
               <p>large kitchenette</p>
             </Link>
           </div>

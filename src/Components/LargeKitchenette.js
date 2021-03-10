@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../App.css";
-import Gallery from "./Gallery";
 import LargeKitchLB from "./Galleries/LargeKitchLB";
 
 class LargeKitchenette extends Component {

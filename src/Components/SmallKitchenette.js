@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import SmallKitchLB from "./Galleries/SmallKitchLB";
 
 class SmallKitchenette extends Component {
   render() {
@@ -8,6 +9,7 @@ class SmallKitchenette extends Component {
         <div className="titleBar">KITCHENETTES: SMALL</div>
         <h1>This is the Small Kitchenette page!</h1>
         <p>MAK Basement Remodeling Small Kitchenette Gallery</p>
+        <SmallKitchLB />
       </div>
     );
   }

@@ -23,7 +23,7 @@ function LightBox() {
     <>
       <div className="wrapper">
         <div className="img-item">
-          <FadeIn transitionDuration={2000} delay={500}>
+          <FadeIn transitionDuration={2000} delay={300}>
             <div className="img-wrap img-hover-zoom">
               <img
                 src="https://picsum.photos/270/180"
@@ -33,7 +33,7 @@ function LightBox() {
           </FadeIn>
         </div>
         <div className="img-item">
-          <FadeIn transitionDuration={2000} delay={600}>
+          <FadeIn transitionDuration={2000} delay={400}>
             <div className="img-wrap img-hover-zoom">
               <img
                 src="https://picsum.photos/270/179"
@@ -43,7 +43,7 @@ function LightBox() {
           </FadeIn>
         </div>
         <div className="img-item">
-          <FadeIn transitionDuration={2000} delay={700}>
+          <FadeIn transitionDuration={2000} delay={600}>
             <div className="img-wrap img-hover-zoom">
               <img
                 src="https://picsum.photos/270/178"
@@ -83,11 +83,31 @@ function LightBox() {
           </FadeIn>
         </div>
         <div className="img-item img-hover-zoom">
-          <FadeIn transitionDuration={2000} delay={1000}>
+          <FadeIn transitionDuration={2000} delay={1100}>
             <div className="img-wrap img-hover-zoom">
               <img
                 src="https://picsum.photos/270/174"
                 onClick={() => openLightboxOnSlide(7)}
+              />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item img-hover-zoom">
+          <FadeIn transitionDuration={2000} delay={1200}>
+            <div className="img-wrap img-hover-zoom">
+              <img
+                src="https://picsum.photos/270/173"
+                onClick={() => openLightboxOnSlide(8)}
+              />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item img-hover-zoom">
+          <FadeIn transitionDuration={2000} delay={1300}>
+            <div className="img-wrap img-hover-zoom">
+              <img
+                src="https://picsum.photos/270/172"
+                onClick={() => openLightboxOnSlide(9)}
               />
             </div>
           </FadeIn>
@@ -106,6 +126,8 @@ function LightBox() {
           "https://picsum.photos/270/176",
           "https://picsum.photos/270/175",
           "https://picsum.photos/270/174",
+          "https://picsum.photos/270/173",
+          "https://picsum.photos/270/172",
         ]}
         thumbs={[bg]}
         slide={lightboxController.slide}

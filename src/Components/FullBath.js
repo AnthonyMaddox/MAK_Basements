@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import FullBathLB from "./Galleries/FullBathLB";
 
 class FullBath extends Component {
   render() {
@@ -8,6 +9,7 @@ class FullBath extends Component {
         <div className="titleBar">BATHROOMS: FULL</div>
         <h1>This is the Full Bath page!</h1>
         <p>MAK Basement Remodeling Full Bathroom Gallery</p>
+        <FullBathLB />
       </div>
     );
   }

@@ -78,6 +78,7 @@ class App extends Component {
             exact={true}
           />
         </main>
+
         <Footer />
       </div>
     );

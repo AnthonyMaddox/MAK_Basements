@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import HalfBathLB from "./Galleries/HalfBathLB";
 
 class HalfBath extends Component {
   render() {
@@ -8,6 +9,7 @@ class HalfBath extends Component {
         <div className="titleBar">BATHROOMS: HALF</div>
         <h1>This is the Half Bath page!</h1>
         <p>MAK Basement Remodeling Half Bathroom Gallery</p>
+        <HalfBathLB />
       </div>
     );
   }

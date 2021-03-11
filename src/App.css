@@ -245,6 +245,11 @@ body {
   color: white;
   overflow-y: hidden;
 }
+.makA {
+    margin: 20px 0 0 10px;
+    width: 130px;
+    opacity: .1;
+}
 /* .bm-item-list:focus {
   outline: none;
 } */

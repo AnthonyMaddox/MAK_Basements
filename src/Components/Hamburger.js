@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { stack as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import "../App.css";
+import MAK_A from "../Images/MAK_A.png";
 
 class Hamburger extends Component {
   constructor(props) {
@@ -59,6 +60,9 @@ class Hamburger extends Component {
         >
           <p className="linkText">CONTACT US</p>
         </a>
+        <div>
+          <img className="makA" src={MAK_A} alt="the A" />
+        </div>
       </Menu>
     );
   }

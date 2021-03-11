@@ -32,15 +32,14 @@ class Home extends Component {
               <span className="inHome">In-Home-Consultation!</span>
             </p>
           </ScrollAnimation>
-
-          <a className="phoneLink" href="tel:240-766-4873">
-            <ScrollAnimation offset="75" delay="1000" animateIn="wobble">
-              <FontAwesomeIcon className="phoneIcon" icon="phone" />
-            </ScrollAnimation>
-            <ScrollAnimation offset="75" animateIn="bounceInRight">
+          <ScrollAnimation offset="75" animateIn="bounceInRight">
+            <a className="phoneLink" href="tel:240-766-4873">
+              <ScrollAnimation offset="75" delay="1200" animateIn="tada">
+                <FontAwesomeIcon className="phoneIcon" icon="phone" />
+              </ScrollAnimation>
               (240) 766-4873
-            </ScrollAnimation>
-          </a>
+            </a>
+          </ScrollAnimation>
         </div>
       </div>
     );

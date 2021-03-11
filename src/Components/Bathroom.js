@@ -6,8 +6,7 @@ class Bathroom extends Component {
     return (
       <div>
         <div className="titleBar">BATHROOMS</div>
-        <h1>This is the Bathroom page!</h1>
-        <p>MAK Basement Remodeling Bathroom Gallery</p>
+        <h1 className="selectorTitle">Maximize Your Convienience:</h1>
         <div className="gallery">
           <div>
             <Link className="subLink" to="/bathrooms/half">
@@ -16,7 +15,7 @@ class Bathroom extends Component {
                 src="https://picsum.photos/270/172"
                 alt="half bath"
               />
-              <p>half bath</p>
+              <p className="selectorSub">Half-Bath</p>
             </Link>
           </div>
           <div>
@@ -26,7 +25,7 @@ class Bathroom extends Component {
                 src="https://picsum.photos/270/171"
                 alt="three quarter bath"
               />
-              <p>three quarter bath</p>
+              <p className="selectorSub">Three-Quarter-Bath</p>
             </Link>
           </div>
           <div>
@@ -36,7 +35,7 @@ class Bathroom extends Component {
                 src="https://picsum.photos/270/170"
                 alt="full bath"
               />
-              <p>full bath</p>
+              <p className="selectorSub">Full Bathroom</p>
             </Link>
           </div>
         </div>

@@ -6,8 +6,7 @@ class Kitchenette extends Component {
     return (
       <div>
         <div className="titleBar">KITCHENETTES</div>
-        <h1>This is the Kitchenette page!</h1>
-        <p>MAK Basement Remodeling Kitchenette Gallery</p>
+        <h1 className="selectorTitle">Establish Utility:</h1>
         <div className="gallery">
           <div>
             <Link className="subLink" to="/kitchenettes/small">
@@ -16,7 +15,7 @@ class Kitchenette extends Component {
                 src="https://picsum.photos/270/172"
                 alt="small kitchenette"
               />
-              <p>small kitchenette</p>
+              <p className="selectorSub">Small Kitchenette</p>
             </Link>
           </div>
           <div>
@@ -26,7 +25,7 @@ class Kitchenette extends Component {
                 src="https://picsum.photos/270/171"
                 alt="medium kitchenette"
               />
-              <p>medium kitchenette</p>
+              <p className="selectorSub">Medium Kitchenette</p>
             </Link>
           </div>
           <div>
@@ -36,7 +35,7 @@ class Kitchenette extends Component {
                 src="https://picsum.photos/270/170"
                 alt="large kitchenette"
               />
-              <p>large kitchenette</p>
+              <p className="selectorSub">Large Kitchenette</p>
             </Link>
           </div>
         </div>

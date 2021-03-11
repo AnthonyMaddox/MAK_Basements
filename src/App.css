@@ -128,16 +128,34 @@ body {
   font-weight: 300;
   margin-bottom: 10px;
 }
-/* bathroom page */
+/* bathroom/kitchenette selector page */
 
 .subLink {
   text-align: center;
+  text-decoration: none;
+  color: #00244b;
 }
+.subLink:visited {
+  text-decoration: none;
+  color: #00244b;
+}
+.subLink:hover {
+  color: white;
+  text-shadow: 2px 2px 5px #00244b;
+}
+.selectorTitle {
+  font-weight: 300;
+  color: #00244b;
+}
+.selectorSub {
+  margin-top: 0;
+}
+
 /* picture gallery */
 
 .pic {
-  height: 120px;
-  width: 200px;
+  height: 130px;
+  width: 210px;
   object-fit: cover;
   margin: 10px;
 }
@@ -149,7 +167,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 5px 5% 5% 5%;
+  padding: 10px 5% 15% 5%;
 }
 
 /* -----------------hamburger menu----------------- */
@@ -217,6 +235,8 @@ body {
 /* Color/shape of close button cross */
 .bm-cross {
   background: white;
+  width: 3px !important;
+  height: 20px !important;
 }
 
 /*
@@ -246,9 +266,9 @@ body {
   overflow-y: hidden;
 }
 .makA {
-    margin: 20px 0 0 10px;
-    width: 130px;
-    opacity: .1;
+  margin: 20px 0 0 10px;
+  width: 130px;
+  opacity: 0.1;
 }
 /* .bm-item-list:focus {
   outline: none;
@@ -259,7 +279,25 @@ body {
 } */
 
 /* media queries */
-
+@media (min-width: 1200px) {
+  .pic {
+    height: 190px;
+    width: 300px;
+  }
+  .gallery {
+    padding: 10px 5% 18% 5%;
+  }
+}
+@media (min-width: 1400px) {
+  .pic {
+    height: 210px;
+    width: 350px;
+  }
+  
+  .gallery {
+    padding: 10px 5% 22% 5%;
+  }
+}
 @media screen and (max-width: 1000px) {
   .hamDiv {
     display: block;

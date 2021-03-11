@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import "../App.css";
 import HalfBathLB from "./Galleries/HalfBathLB";
-
+import FadeIn from "react-fade-in";
 class HalfBath extends Component {
   render() {
     return (
       <div>
         <div className="titleBar">BATHROOMS: HALF</div>
-        <h1>This is the Half Bath page!</h1>
-        <p>MAK Basement Remodeling Half Bathroom Gallery</p>
+        <FadeIn transitionDuration={2000} delay={1300}>
+          <div className="quote">Only The Essentials</div>
+        </FadeIn>
         <HalfBathLB />
       </div>
     );

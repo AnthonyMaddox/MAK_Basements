@@ -37,7 +37,7 @@ class Home extends Component {
               <ScrollAnimation
                 offset="75"
                 initiallyVisible={true}
-                delay="1200"
+                delay="1000"
                 animateIn="tada"
               >
                 <FontAwesomeIcon className="phoneIcon" icon="phone" />

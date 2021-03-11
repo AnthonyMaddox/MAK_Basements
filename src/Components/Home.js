@@ -34,10 +34,10 @@ class Home extends Component {
           </ScrollAnimation>
 
           <a className="phoneLink" href="tel:240-766-4873">
-            <ScrollAnimation offset="75" delay="1000" animateIn="tada">
+            <ScrollAnimation offset="30" delay="1000" animateIn="tada">
               <FontAwesomeIcon className="phoneIcon" icon="phone" />
             </ScrollAnimation>
-            <ScrollAnimation offset="75" animateIn="bounceInRight">
+            <ScrollAnimation offset="30" animateIn="bounceInRight">
               (240) 766-4873
             </ScrollAnimation>
           </a>

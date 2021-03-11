@@ -279,6 +279,15 @@ body {
 } */
 
 /* media queries */
+@media (min-width: 1000px) {
+    .pic {
+      height: 170px;
+      width: 270px;
+    }
+    .gallery {
+      padding: 10px 5% 18% 5%;
+    }
+  }
 @media (min-width: 1200px) {
   .pic {
     height: 190px;

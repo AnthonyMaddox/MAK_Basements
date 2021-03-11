@@ -6,7 +6,7 @@ class Bathroom extends Component {
     return (
       <div>
         <div className="titleBar">BATHROOMS</div>
-        <h1 className="selectorTitle">Maximize Your Convienience:</h1>
+        <h1 className="selectorTitle">Maximize Convienience:</h1>
         <div className="gallery">
           <div>
             <Link className="subLink" to="/bathrooms/half">

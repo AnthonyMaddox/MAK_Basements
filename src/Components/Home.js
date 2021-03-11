@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
 import FadeIn from "react-fade-in";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.compat.css";
 import LightBox from "./LightBox";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,15 +26,23 @@ class Home extends Component {
           <LightBox />
         </div>
         <div className="phoneDiv">
-          <p className="phonePara">
-            Give us a call to schedule your{" "}
-            <span className="inHome">In-Home-Consultation!</span>
-          </p>
+          <ScrollAnimation animateIn="fadeIn">
+            <p className="phonePara">
+              Give us a call to schedule your{" "}
+              <span className="inHome">In-Home-Consultation!</span>
+            </p>
+          </ScrollAnimation>
 
-          <a className="phoneLink" href="tel:541-728-1280">
-            <FontAwesomeIcon className="phoneIcon" icon="phone" />
-            541-728-1280
-          </a>
+          <div>
+            <a className="phoneLink" href="tel:541-728-1280">
+              <ScrollAnimation delay="1300" animateIn="tada">
+                <FontAwesomeIcon className="phoneIcon" icon="phone" />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="bounceInRight">
+                (541) 728-1280
+              </ScrollAnimation>
+            </a>
+          </div>
         </div>
       </div>
     );

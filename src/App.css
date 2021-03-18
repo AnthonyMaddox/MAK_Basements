@@ -60,6 +60,7 @@ body {
   background-color: #00244b;
   padding: 12px 10px 0 10px;
   font-size: 14px;
+  color: white;
 }
 .aLink:hover {
   opacity: 0.8;

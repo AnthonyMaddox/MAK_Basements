@@ -23,7 +23,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="app" >
+      <div className="app">
         <nav className="navBar">
           <Link className="navLink" to="/home">
             <div className="logoDiv">
@@ -39,15 +39,14 @@ class App extends Component {
             </Link>
             <a
               className="aLink"
-              href="https://makhomedesign.com/contact/"
+              href="https://makhomedesign.com/basement-remodeling/#gform_wrapper_2"
               target="_blank"
             >
               <p className="alinkText">CONTACT US</p>
             </a>
           </div>
           <div className="hamDiv">
-            <Hamburger
-            />
+            <Hamburger />
           </div>
         </nav>
         <main id="page-wrap">

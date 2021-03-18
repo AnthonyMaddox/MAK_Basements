@@ -84,15 +84,15 @@ body {
   flex-direction: column;
 }
 .titleBar {
-  height: 28px;
-  padding: 2px 0 2px 0;
+  height: 30px;
   width: 100%;
   color: white;
-  /* background-color: #2947ad; */
   background-image: linear-gradient(to right, #2947ad, #00244b);
   font-size: 125%;
   margin-bottom: 15px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* phone */
@@ -152,7 +152,10 @@ body {
 }
 
 /* picture gallery */
-
+.subLinkDivPage {
+  position: relative;
+  top: 2rem;
+}
 .pic {
   height: 130px;
   width: 210px;
@@ -167,7 +170,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 10px 5% 15% 5%;
+  padding: 8% 5% 10% 5%;
 }
 
 /* -----------------hamburger menu----------------- */
@@ -280,21 +283,21 @@ body {
 
 /* media queries */
 @media (min-width: 1000px) {
-    .pic {
-      height: 170px;
-      width: 270px;
-    }
-    .gallery {
-      padding: 10px 5% 18% 5%;
-    }
+  .pic {
+    height: 170px;
+    width: 270px;
   }
+  .gallery {
+    padding: 8% 5% 10% 5%;
+  }
+}
 @media (min-width: 1200px) {
   .pic {
     height: 190px;
     width: 300px;
   }
   .gallery {
-    padding: 10px 5% 18% 5%;
+    padding: 8% 5% 10% 5%;
   }
 }
 @media (min-width: 1400px) {
@@ -302,9 +305,9 @@ body {
     height: 210px;
     width: 350px;
   }
-  
+
   .gallery {
-    padding: 10px 5% 22% 5%;
+    padding: 8% 5% 10% 5%;
   }
 }
 @media screen and (max-width: 1000px) {

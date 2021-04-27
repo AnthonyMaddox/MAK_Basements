@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import pow3 from "../Images/Bathroom/pow-3.jpg";
 import pow_3_med from "../Images/Bathroom/pow-3-med.jpg";
+import mid_b_3_med from "../Images/Bathroom/mid-b-3-med.jpg";
 import FadeIn from "react-fade-in";
 
 class Bathroom extends Component {
@@ -23,10 +23,10 @@ class Bathroom extends Component {
             <Link className="subLink" to="/bathrooms/three_quarter">
               <img
                 className="pic"
-                src="https://picsum.photos/270/171"
+                src={mid_b_3_med}
                 alt="three quarter bath"
               />
-              <p className="selectorSub">Three-Quarter-Bath</p>
+              <p className="selectorSub">Mid-Tier Bath</p>
             </Link>
           </div>
           <div>
@@ -36,7 +36,7 @@ class Bathroom extends Component {
                 src="https://picsum.photos/270/170"
                 alt="full bath"
               />
-              <p className="selectorSub">Full Bathroom</p>
+              <p className="selectorSub">Top-Tier Bath</p>
             </Link>
           </div>
         </div>

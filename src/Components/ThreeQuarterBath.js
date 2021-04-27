@@ -18,7 +18,7 @@ class ThreeQuarterBath extends Component {
   render() {
     return (
       <div>
-        <div className="titleBar">BATHROOMS: THREE-QUARTER</div>
+        <div className="titleBar">BATHROOMS: MID-TIER</div>
         <FadeIn transitionDuration={2000} delay={1300}>
           <div className="quote">The Perfect Fit</div>
         </FadeIn>

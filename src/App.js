@@ -39,7 +39,7 @@ class App extends Component {
             </Link>
             <a
               className="aLink"
-              href="https://makhomedesign.com/basement-remodeling/#gform_wrapper_2"
+              href="https://makhomedesign.com/basement-remodeling/#gform_wrapper_2 "
               target="_blank"
             >
               <p className="alinkText">CONTACT US</p>
@@ -50,7 +50,7 @@ class App extends Component {
           </div>
         </nav>
         <main id="page-wrap">
-          <Route path="/" render={() => <Redirect to="/home" />} />
+          <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
           <Route path="/home" component={Home} exact={true} />
           <Route path="/kitchenettes" component={Kitchenette} exact={true} />
           <Route path="/bathrooms" component={Bathroom} exact={true} />
@@ -77,7 +77,6 @@ class App extends Component {
             exact={true}
           />
         </main>
-
         <Footer />
       </div>
     );

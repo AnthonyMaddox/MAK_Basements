@@ -9,8 +9,33 @@ class HalfBath extends Component {
     return (
       <div>
         <div className="titleBar">BATHROOMS: POWDER ROOM</div>
-        <Phone />
         <HalfBathLB />
+        <div className="descriptionDiv">
+          WHAT IS A POWDER ROOM?
+          <br></br>
+          <br></br>A powder room is also known as a half-bath or guest bathroom.
+          It contains two of the main bathroom components, most common are a
+          toilet and sink. The powder room can be located on any level of the
+          home.
+          <br></br>
+          <br></br>
+          Adding a powder room to your basement can greatly increase its
+          convenience and be one of the most profitable improvements you can
+          make.
+          <br></br>
+          <br></br>
+          We provide consultation with design and product selection:
+          <ul>
+            <li className="dList">Luxury Vinyl Tile (LVT) Flooring</li>
+            <li className="dList">Ceramic Tile</li>
+            <li className="dList">Recessed Lighting</li>
+            <li className="dList">Hand Picked Cabinetry/Vanity</li>
+            <li className="dList">Vanity Mirrors</li>
+            <li className="dList">Countertops</li>
+            <li className="dList">Toilets</li>
+          </ul>
+        </div>
+        <Phone />
       </div>
     );
   }

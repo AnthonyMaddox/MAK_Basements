@@ -15,7 +15,7 @@ class Phone extends Component {
   render() {
     return (
       <div className="phoneDiv">
-        <FadeIn transitionDuration={2000} delay={500}>
+        <FadeIn transitionDuration={2000} delay={2500}>
           <p className="phonePara">
             Give us a call to schedule your{" "}
             <span className="inHome">In-Home-Consultation!</span>

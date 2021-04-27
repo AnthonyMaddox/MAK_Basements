@@ -89,7 +89,7 @@ body {
   flex-direction: column;
 }
 .titleBar {
-  height: 30px;
+  height: 20px;
   width: 100%;
   color: white;
   background-image: linear-gradient(to right, #2947ad, #00244b);

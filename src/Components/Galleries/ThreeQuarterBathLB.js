@@ -61,7 +61,7 @@ function ThreeQuarterBathLB() {
         slideChangeAnimation="scale-in"
         toggler={lightboxController.toggler}
         sources={[mid_b_3, mid_b_8, mid_b_6]}
-        thumbs={[mid_b_3_thumb, mid_b_8_thumb, mid_b_6_thumb]}
+        thumbs={[mid_b_3_thumb, mid_b_8_thumb, mid_b_6_thumb ]}
         slide={lightboxController.slide}
       />
     </>

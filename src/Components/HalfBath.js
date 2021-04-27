@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "../App.css";
 import HalfBathLB from "./Galleries/HalfBathLB";
+import makA_rev from "../Images/makA_rev.png";
 // import Phone from "./Phone";
+import FadeIn from "react-fade-in";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -19,6 +21,12 @@ class HalfBath extends Component {
     return (
       <div>
         <div className="titleBar">BATHROOMS: POWDER ROOM</div>
+        <FadeIn transitionDuration={2000} delay={1500}>
+          <div className="quote">
+            <img className="makA_rev" src={makA_rev} alt="makA" />
+            Small But Powerful
+          </div>
+        </FadeIn>
         <HalfBathLB />
         <div className="descriptionDiv">
           WHAT IS A POWDER ROOM?

@@ -20,7 +20,7 @@ class ThreeQuarterBath extends Component {
       <div>
         <div className="titleBar">BATHROOMS: MID-TIER</div>
         <FadeIn transitionDuration={2000} delay={1500}>
-          <div className="quote">The Perfect Fit</div>
+          <div className="quote">Essential </div>
         </FadeIn>
         <ThreeQuarterBathLB />
         <div className="descriptionDiv">
@@ -55,14 +55,14 @@ class ThreeQuarterBath extends Component {
           </ScrollAnimation>
           <ScrollAnimation offset="75" animateIn="bounceInRight">
             <a className="phoneLink" href="tel:240-766-4873">
-              <ScrollAnimation
+              {/* <ScrollAnimation
                 offset="75"
                 initiallyVisible={true}
                 delay="1000"
                 animateIn="tada"
-              >
+              > */}
                 <FontAwesomeIcon className="phoneIcon" icon="phone-alt" />
-              </ScrollAnimation>
+              {/* </ScrollAnimation> */}
               (240) 766-4873
             </a>
           </ScrollAnimation>

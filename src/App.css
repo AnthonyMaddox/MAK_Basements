@@ -94,10 +94,14 @@ body {
   color: white;
   background-image: linear-gradient(to right, #2947ad, #00244b);
   font-size: 125%;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.makA_rev {
+  height: 40px;
+  opacity: 0.1;
 }
 
 /* phone */

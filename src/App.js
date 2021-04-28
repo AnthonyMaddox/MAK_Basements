@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, Link, Redirect } from "react-router-dom";
 import "./App.css";
 import "./Footer.css";
-import logo from "./Images/MAK_Basement_Logo.jpg";
+import logo from "./Images/MAK_Basement_Logo.png";
 // import background from "./Images/basement_bg_bw.jpg"
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";

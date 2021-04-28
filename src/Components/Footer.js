@@ -16,6 +16,9 @@ class Footer extends Component {
   render() {
     return (
       <div className="footerDiv">
+        <p className="copyright">
+          Copyright MAK Home Remodeling 2021 - All Rights Reserved
+        </p>
         <div className="footLogoDiv">
           <a href="https://makhomedesign.com/" target="_blank">
             <img className="footLogo" src={logo} />
@@ -50,9 +53,6 @@ class Footer extends Component {
                 </div>
               </a>
             </div>
-            <p className="copyright">
-              Copyright MAK Home Remodeling 2021 - All Rights Reserved
-            </p>
           </div>
         </div>
         <div className="resDiv">

@@ -120,11 +120,14 @@ li {
   display: flex;
 }
 .copyright {
-  font-size: 10px;
-  color: rgb(163, 163, 163);
-  margin-top: 35px;
-  margin-left: 45px;
-  margin-right: -45px;
+  position: absolute;
+  left: 50%;
+  color: rgb(170, 170, 170);
+  font-size: 9px;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto;
 }
 @media screen and (max-width: 880px) {
   main {

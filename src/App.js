@@ -32,7 +32,7 @@ class App extends Component {
           />
           <meta
             name="keywords"
-            content="mak, M.A.K.,remodeling, remodel, construction, basement, basements, finish, finishing, home, maddox"
+            content="mak, M.A.K.,remodeling, services, remodel, construction, basement, basements, finish, finishing, home, maddox"
           />
         </Helmet>
         <nav className="navBar">

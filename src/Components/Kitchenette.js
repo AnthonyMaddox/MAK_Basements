@@ -1,12 +1,21 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import FadeIn from "react-fade-in";
+import makA_rev from "../Images/makA_rev.png";
 
 class Kitchenette extends Component {
   render() {
     return (
       <div>
         <div className="titleBar">KITCHENETTES</div>
-        <h1 className="selectorTitle">Establish Utility:</h1>
+        <FadeIn
+          className="subLinkDivPage"
+          transitionDuration={1500}
+          delay={500}
+        >
+          <img className="makA_rev" src={makA_rev} alt="makA" />
+          <div className="quote">Establish Utility</div>
+        </FadeIn>
         <div className="gallery">
           <div>
             <Link className="subLink" to="/kitchenettes/small">

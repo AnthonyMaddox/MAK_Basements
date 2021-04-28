@@ -55,7 +55,7 @@ class Hamburger extends Component {
         </Link>
         <a
           className="burgerLink"
-          href="https://makhomedesign.com/contact/"
+          href="https://makhomedesign.com/basement-remodeling/#gform_wrapper_2 "
           target="_blank"
         >
           <p className="linkText">CONTACT US</p>

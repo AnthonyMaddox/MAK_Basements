@@ -79,7 +79,7 @@ class Footer extends Component {
             <li>
               <a
                 className="footLink"
-                href="https://makhomedesign.com/contact/"
+                href="https://makhomedesign.com/basement-remodeling/#gform_wrapper_2 "
                 target="_blank"
               >
                 CONTACT US

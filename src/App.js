@@ -3,7 +3,6 @@ import { Route, Link, Redirect } from "react-router-dom";
 import "./App.css";
 import "./Footer.css";
 import logo from "./Images/MAK_Basement_Logo.png";
-// import background from "./Images/basement_bg_bw.jpg"
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import Kitchenette from "./Components/Kitchenette";
@@ -15,6 +14,7 @@ import FullBath from "./Components/FullBath";
 import SmallKitchenette from "./Components/SmallKitchenette";
 import MediumKitchenette from "./Components/MediumKitchenette";
 import LargeKitchenette from "./Components/LargeKitchenette";
+import { Helmet } from "react-helmet";
 
 class App extends Component {
   constructor(props) {
@@ -24,6 +24,17 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <Helmet>
+          <title>MAK Basements Home</title>
+          <meta
+            name="description"
+            content="Welcome to MAK Home Remodeling Services' Basement Remodeling Gallery. Finishing your basement is an essential part of turning your house into your dream home. We provide design consultation to help your vision become clear and offer the highest quality service and materials available. We service the lower DC and Southern Maryland area."
+          />
+          <meta
+            name="keywords"
+            content="mak, M.A.K.,remodeling, remodel, construction, basement, basements, finish, finishing, home, maddox"
+          />
+        </Helmet>
         <nav className="navBar">
           <Link className="navLink" to="/home">
             <div className="logoDiv">

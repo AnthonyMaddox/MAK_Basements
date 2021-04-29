@@ -30,10 +30,12 @@ class App extends Component {
           <meta
             name="description"
             content="Welcome to MAK Home Remodeling Services' Basement Remodeling Gallery. Finishing your basement is an essential part of turning your house into your dream home. We provide design consultation to help your vision become clear and offer the highest quality service and materials available. We service the lower DC and Southern Maryland area."
+            data-react-helmet="true"
           />
           <meta
             name="keywords"
             content="mak, M.A.K.,remodeling, services, remodel, construction, basement, basements, finish, finishing, home, maddox"
+            data-react-helmet="true"
           />
         </Helmet>
         <nav className="navBar">

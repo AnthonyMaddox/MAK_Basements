@@ -25,30 +25,38 @@ function LightBox() {
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={300}>
             <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/180"
-                onClick={() => openLightboxOnSlide(1)}
-              />
+              <div>
+                <img
+                  src="https://st.hzcdn.com/simgs/0f518a290d77e881_8-0761/home-design.jpg"
+                  alt=""
+                  onClick={() => openLightboxOnSlide(1)}
+                />
+              </div>
             </div>
           </FadeIn>
         </div>
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={400}>
             <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/179"
-                onClick={() => openLightboxOnSlide(2)}
-              />
+              <div>
+                <img
+                  src="https://st.hzcdn.com/simgs/pictures/basements/fort-washington-md-m-a-k-remodeling-services-img~1eb14cc10e78bdb9_8-1178-1-b2ed950.jpg"
+                  alt=""
+                  onClick={() => openLightboxOnSlide(2)}
+                />
+              </div>
             </div>
           </FadeIn>
         </div>
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={600}>
             <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/178"
-                onClick={() => openLightboxOnSlide(3)}
-              />
+              <div>
+                <img
+                  src="https://st.hzcdn.com/simgs/pictures/basements/fort-washington-md-m-a-k-remodeling-services-img~73418bf00e78bdbd_8-1522-1-6033263.jpg"
+                  onClick={() => openLightboxOnSlide(3)}
+                />
+              </div>
             </div>
           </FadeIn>
         </div>

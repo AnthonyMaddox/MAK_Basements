@@ -1,7 +1,7 @@
 /* footer */
 
 main {
-  padding-bottom: 18rem;
+  padding-bottom: 19rem;
 }
 main::after {
   content: "";
@@ -23,7 +23,7 @@ main::after {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: 18rem;
+  height: 19rem;
   display: flex;
   justify-content: space-around;
 }
@@ -127,7 +127,8 @@ li {
   bottom: 0px;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
+  width: 100vw;
 }
 @media screen and (max-width: 880px) {
   main {
@@ -262,6 +263,9 @@ li {
   .footerDiv {
     padding-left: 2%;
   }
+  .copyright {
+    font-size: 8px;
+  }
 }
 @media screen and (max-width: 361px) {
   .houzzDiv {
@@ -302,5 +306,8 @@ li {
   .logoImg {
     margin-top: 8px;
     height: 32px;
+  }
+  .copyright {
+    font-size: 7px;
   }
 }

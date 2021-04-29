@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Helmet>
+        {/* <Helmet>
           <title>MAK Basements Home</title>
           <meta charSet="utf-8" />
           <meta
@@ -37,7 +37,7 @@ class App extends Component {
             content="mak, M.A.K.,remodeling, services, remodel, construction, basement, basements, finish, finishing, home, maddox"
             data-react-helmet="true"
           />
-        </Helmet>
+        </Helmet> */}
         <nav className="navBar">
           <Link className="navLink" to="/home">
             <div className="logoDiv">

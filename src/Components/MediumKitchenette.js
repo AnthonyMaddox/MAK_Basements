@@ -15,12 +15,11 @@ class MediumKitchenette extends Component {
         <Link to="/kitchenettes">
           <BackButton BackButtonText="Back to Kitchenettes" />
         </Link>
-        <FadeIn transitionDuration={2000} delay={1000}>
+        <FadeIn transitionDuration={2000} delay={700}>
           <img className="makA_rev" src={makA_rev} alt="makA" />
           <div className="quote">Find The Right Balance</div>
         </FadeIn>
         <MediumKitchLB />
-        <Phone />
         <div className="descriptionDiv">
           WHAT DOES OUR MID-TIER KITCHENTTE INCLUDE?
           <br></br>
@@ -39,6 +38,7 @@ class MediumKitchenette extends Component {
             <li className="dList">Appliances</li>
           </ul>
         </div>
+        <Phone />
       </div>
     );
   }

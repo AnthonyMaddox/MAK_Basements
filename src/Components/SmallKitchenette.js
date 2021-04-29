@@ -15,7 +15,7 @@ class SmallKitchenette extends Component {
         <Link className="" to="/kitchenettes">
           <BackButton BackButtonText="Back to Kitchenettes" />
         </Link>
-        <FadeIn transitionDuration={2000} delay={1000}>
+        <FadeIn transitionDuration={2000} delay={700}>
           <img className="makA_rev" src={makA_rev} alt="makA" />
           <div className="quote">Refined Functionality</div>
         </FadeIn>

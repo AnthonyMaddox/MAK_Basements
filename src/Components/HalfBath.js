@@ -1,17 +1,21 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import HalfBathLB from "./Galleries/HalfBathLB";
 import makA_rev from "../Images/makA_rev.png";
 import FadeIn from "react-fade-in";
 import Phone from "./Phone";
+import BackButton from "./BackButton"
 
 class HalfBath extends Component {
   render() {
     return (
       <div>
         <div className="titleBar">BATHROOMS: POWDER ROOM</div>
-
-        <FadeIn transitionDuration={2000} delay={1000}>
+        <Link to="/bathrooms">
+          <BackButton BackButtonText="Back to Bathrooms" />
+        </Link>
+        <FadeIn transitionDuration={2000} delay={700}>
           <img className="makA_rev" src={makA_rev} alt="makA" />
           <div className="quote">The Essentials</div>
         </FadeIn>

@@ -31,7 +31,7 @@ body {
 .sideNav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .navLink {
   text-decoration: none;
@@ -101,7 +101,7 @@ body {
 }
 .makA_rev {
   height: 50px;
-  opacity: 0.1;
+  opacity: 0.13;
   margin-top: -24px;
   margin-bottom: -5px;
 }
@@ -192,6 +192,10 @@ body {
 }
 .dList {
   list-style-type: disc;
+}
+.phoneStaticDiv {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 3% 0%;
 }
 
 /* -----------------hamburger menu----------------- */
@@ -293,6 +297,25 @@ body {
   margin: 20px 0 0 10px;
   width: 130px;
   opacity: 0.1;
+}
+/* back button  */
+
+.backImage {
+  height: 25px;
+  opacity: 0.4;
+  background-color: white;
+}
+.backText {
+  color: #b6cbdd;
+  font-size: 8px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.BackButtonDiv {
+  position: absolute;
+  display: flex;
+  margin-top: -55px;
+  right: 0px;
 }
 /* .bm-item-list:focus {
   outline: none;

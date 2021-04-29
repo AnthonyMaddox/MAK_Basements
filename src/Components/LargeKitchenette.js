@@ -1,49 +1,42 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import LargeKitchLB from "./Galleries/LargeKitchLB";
 import FadeIn from "react-fade-in";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.compat.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as Icons from "@fortawesome/free-solid-svg-icons";
-
-const iconList = Object.keys(Icons)
-  .filter((key) => key !== "fas" && key !== "prefix")
-  .map((icon) => Icons[icon]);
-
-library.add(...iconList);
+import Phone from "./Phone";
+import BackButton from "./BackButton";
+import makA_rev from "../Images/makA_rev.png";
 
 class LargeKitchenette extends Component {
   render() {
     return (
       <div>
-        <div className="titleBar">KITCHENETTES: LARGE</div>
-        <FadeIn transitionDuration={2000} delay={1300}>
-          <div className="quote">Luxury With No Exceptions</div>
+        <div className="titleBar">KITCHENETTES: TOP-TIER</div>
+        <Link to="/kitchenettes">
+          <BackButton BackButtonText="Back to Kitchenettes" />
+        </Link>
+        <FadeIn transitionDuration={2000} delay={700}>
+        <img className="makA_rev" src={makA_rev} alt="makA" />
+          <div className="quote">Luxury, No Exceptions</div>
         </FadeIn>
         <LargeKitchLB />
-        <div className="phoneDiv">
-          <ScrollAnimation animateIn="fadeIn">
-            <p className="phonePara">
-              Give us a call to schedule your{" "}
-              <span className="inHome">In-Home-Consultation!</span>
-            </p>
-          </ScrollAnimation>
-          <ScrollAnimation offset="75" animateIn="bounceInRight">
-            <a className="phoneLink" href="tel:240-766-4873">
-              <ScrollAnimation
-                offset="75"
-                initiallyVisible={true}
-                delay="1000"
-                animateIn="tada"
-              >
-                <FontAwesomeIcon className="phoneIcon" icon="phone" />
-              </ScrollAnimation>
-              (240) 766-4873
-            </a>
-          </ScrollAnimation>
+        <div className="descriptionDiv">
+          WHAT DOES OUR TOP-TIER KITCHENTTE INCLUDE?
+          <br></br>
+          <br></br>Our Top-Tier kitchenette can be your all inclusive kitchen. It incorporates five plus cabinets with a range and/or oven. All essential appliances may be added as well as a seperate bar or island feature. 
+          <br></br>
+          <br></br>
+          Don't make sacrifices and let your dream build your dream basement kitchen.
+          <br></br>
+          <br></br>
+          We provide consultation with design and product selection:
+          <ul>
+            <li className="dList">Hand Picked Cabinetry</li>
+            <li className="dList">Countertops</li>
+            <li className="dList">Appliances</li>
+          </ul>
         </div>
+        <Phone />
       </div>
     );
   }

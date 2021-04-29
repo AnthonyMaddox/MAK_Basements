@@ -1,48 +1,43 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import MediumKitchLB from "./Galleries/MediumKitchLB";
 import FadeIn from "react-fade-in";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.compat.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as Icons from "@fortawesome/free-solid-svg-icons";
-
-const iconList = Object.keys(Icons)
-  .filter((key) => key !== "fas" && key !== "prefix")
-  .map((icon) => Icons[icon]);
-
-library.add(...iconList);
+import Phone from "./Phone";
+import BackButton from "./BackButton";
+import makA_rev from "../Images/makA_rev.png";
 
 class MediumKitchenette extends Component {
   render() {
     return (
       <div>
-        <div className="titleBar">KITCHENETTES: MEDIUM</div>
-        <FadeIn transitionDuration={2000} delay={1300}>
-          <div className="quote">Everything You Need, Nothing You Don't</div>
+        <div className="titleBar">KITCHENETTES: MID-TIER</div>
+        <Link to="/kitchenettes">
+          <BackButton BackButtonText="Back to Kitchenettes" />
+        </Link>
+        <FadeIn transitionDuration={2000} delay={1000}>
+          <img className="makA_rev" src={makA_rev} alt="makA" />
+          <div className="quote">Find The Right Balance</div>
         </FadeIn>
         <MediumKitchLB />
-        <div className="phoneDiv">
-          <ScrollAnimation animateIn="fadeIn">
-            <p className="phonePara">
-              Give us a call to schedule your{" "}
-              <span className="inHome">In-Home-Consultation!</span>
-            </p>
-          </ScrollAnimation>
-          <ScrollAnimation offset="75" animateIn="bounceInRight">
-            <a className="phoneLink" href="tel:240-766-4873">
-              <ScrollAnimation
-                offset="75"
-                initiallyVisible={true}
-                delay="1000"
-                animateIn="tada"
-              >
-                <FontAwesomeIcon className="phoneIcon" icon="phone" />
-              </ScrollAnimation>
-              (240) 766-4873
-            </a>
-          </ScrollAnimation>
+        <Phone />
+        <div className="descriptionDiv">
+          WHAT DOES OUR MID-TIER KITCHENTTE INCLUDE?
+          <br></br>
+          <br></br>Our Mid-Tier kitchenette is similar to a traditional basement
+          wet bar. It may have four to five cabinets with a sink and one to two
+          appliances such as a refrigerator and microwave.
+          <br></br>
+          <br></br>
+          Find the right balance for your comfort and entertainment needs.
+          <br></br>
+          <br></br>
+          We provide consultation with design and product selection:
+          <ul>
+            <li className="dList">Hand Picked Cabinetry</li>
+            <li className="dList">Countertops</li>
+            <li className="dList">Appliances</li>
+          </ul>
         </div>
       </div>
     );

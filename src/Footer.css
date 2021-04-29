@@ -129,6 +129,25 @@ li {
   text-align: center;
   margin: 0 auto;
 }
+
+/* back button  */
+.backImage {
+  height: 25px;
+  opacity: 0.4;
+  background-color: white;
+}
+.backText {
+  color: #b6cbdd;
+  font-size: 8px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.BackButtonDiv {
+  position: absolute;
+  display: flex;
+  margin-top: -55px;
+  right: 0px;
+}
 @media screen and (max-width: 880px) {
   main {
     padding-bottom: 28rem;
@@ -235,6 +254,9 @@ li {
 @media screen and (max-width: 550px) {
   .footerDiv {
     padding-left: 10%;
+  }
+  .backText {
+    display: none;
   }
 }
 @media screen and (max-width: 450px) {

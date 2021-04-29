@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import FadeIn from "react-fade-in";
 import makA_rev from "../Images/makA_rev.png";
+import mid_k_2_med from "../Images/Kitchen/mid-k-2-med.jpg";
+import start_k_8_med from "../Images/Kitchen/start-k-8-med.jpg";
 
 class Kitchenette extends Component {
   render() {
@@ -21,20 +23,20 @@ class Kitchenette extends Component {
             <Link className="subLink" to="/kitchenettes/small">
               <img
                 className="pic"
-                src="https://picsum.photos/270/172"
+                src={start_k_8_med}
                 alt="small kitchenette"
               />
-              <p className="selectorSub">Small Kitchenette</p>
+              <p className="selectorSub">Starter Kitchenette</p>
             </Link>
           </div>
           <div>
             <Link className="subLink" to="/kitchenettes/medium">
               <img
                 className="pic"
-                src="https://picsum.photos/270/171"
+                src={mid_k_2_med}
                 alt="medium kitchenette"
               />
-              <p className="selectorSub">Medium Kitchenette</p>
+              <p className="selectorSub">Mid-Tier Kitchenette</p>
             </Link>
           </div>
           <div>
@@ -44,7 +46,7 @@ class Kitchenette extends Component {
                 src="https://picsum.photos/270/170"
                 alt="large kitchenette"
               />
-              <p className="selectorSub">Large Kitchenette</p>
+              <p className="selectorSub">Top-Tier Kitchenette</p>
             </Link>
           </div>
         </div>

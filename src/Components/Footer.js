@@ -17,7 +17,7 @@ class Footer extends Component {
     return (
       <div className="footerDiv">
         <p className="copyright">
-          Copyright MAK Home Remodeling 2021 - All Rights Reserved
+          Copyright MAK Home Remodeling 2021 (Royalty Free Images Not Copyright)
         </p>
         <div className="footLogoDiv">
           <a href="https://makhomedesign.com/" target="_blank">

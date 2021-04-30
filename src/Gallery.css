@@ -16,6 +16,7 @@
 .img-wrap img {
   width: 100%;
   height: auto;
+  max-height: 15rem;
 }
 
 .img-hover-zoom {

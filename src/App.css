@@ -302,7 +302,7 @@ body {
 
 .backImage {
   height: 25px;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .backText {
   color: #2947ad;
@@ -314,7 +314,7 @@ body {
   position: absolute;
   display: flex;
   margin-top: -25px;
-  left: 0px;
+  left: 5px;
 }
 /* .bm-item-list:focus {
   outline: none;

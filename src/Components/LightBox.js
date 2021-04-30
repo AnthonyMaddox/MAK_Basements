@@ -1,9 +1,53 @@
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
-import bg from "../Images/basement_bg.jpg";
 import "../App.css";
 import "../Gallery.css";
 import FadeIn from "react-fade-in";
+import b3_med from "../Images/Home/b3-med.jpg";
+import b3_thumb from "../Images/Home/b3-thumb.jpg";
+import b3 from "../Images/Home/b3.jpg";
+import b1_med from "../Images/Home/b1-med.jpg";
+import b1_thumb from "../Images/Home/b1-thumb.jpg";
+import b1 from "../Images/Home/b1.jpg";
+import b2_med from "../Images/Home/b2-med.jpg";
+import b2_thumb from "../Images/Home/b2-thumb.jpg";
+import b2 from "../Images/Home/b2.jpg";
+import b4_med from "../Images/Home/b4-med.jpg";
+import b4_thumb from "../Images/Home/b4-thumb.jpg";
+import b4 from "../Images/Home/b4.jpg";
+import b5_med from "../Images/Home/b5-med.jpg";
+import b5_thumb from "../Images/Home/b5-thumb.jpg";
+import b5 from "../Images/Home/b5.jpg";
+import b6_med from "../Images/Home/b6-med.jpg";
+import b6_thumb from "../Images/Home/b6-thumb.jpg";
+import b6 from "../Images/Home/b6.jpg";
+import b8_med from "../Images/Home/b8-med.jpg";
+import b8_thumb from "../Images/Home/b8-thumb.jpg";
+import b8 from "../Images/Home/b8.jpg";
+import b7_med from "../Images/Home/b7-med.jpg";
+import b7_thumb from "../Images/Home/b7-thumb.jpg";
+import b7 from "../Images/Home/b7.jpg";
+import b9_med from "../Images/Home/b9-med.jpg";
+import b9_thumb from "../Images/Home/b9-thumb.jpg";
+import b9 from "../Images/Home/b9.jpg";
+import b10_med from "../Images/Home/b10-med.jpg";
+import b10_thumb from "../Images/Home/b10-thumb.jpg";
+import b10 from "../Images/Home/b10.jpg";
+import b11_med from "../Images/Home/b11-med.jpg";
+import b11_thumb from "../Images/Home/b11-thumb.jpg";
+import b11 from "../Images/Home/b11.jpg";
+import b12_med from "../Images/Home/b12-med.jpg";
+import b12_thumb from "../Images/Home/b12-thumb.jpg";
+import b12 from "../Images/Home/b12.jpg";
+import b13_med from "../Images/Home/b13-med.jpg";
+import b13_thumb from "../Images/Home/b13-thumb.jpg";
+import b13 from "../Images/Home/b13.jpg";
+import b14_med from "../Images/Home/b14-med.jpg";
+import b14_thumb from "../Images/Home/b14-thumb.jpg";
+import b14 from "../Images/Home/b14.jpg";
+import b15_med from "../Images/Home/b15-med.jpg";
+import b15_thumb from "../Images/Home/b15-thumb.jpg";
+import b15 from "../Images/Home/b15.jpg";
 
 function LightBox() {
   //   const [toggler, setToggler] = useState(false);
@@ -23,11 +67,11 @@ function LightBox() {
     <>
       <div className="wrapper">
         <div className="img-item">
-          <FadeIn transitionDuration={2000} delay={300}>
+          <FadeIn transitionDuration={2000} delay={200}>
             <div className="img-wrap img-hover-zoom">
               <div>
                 <img
-                  src="https://st.hzcdn.com/simgs/0f518a290d77e881_8-0761/home-design.jpg"
+                  src={b3_med}
                   alt=""
                   onClick={() => openLightboxOnSlide(1)}
                 />
@@ -38,13 +82,7 @@ function LightBox() {
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={400}>
             <div className="img-wrap img-hover-zoom">
-              <div>
-                <img
-                  src="https://st.hzcdn.com/simgs/pictures/basements/fort-washington-md-m-a-k-remodeling-services-img~1eb14cc10e78bdb9_8-1178-1-b2ed950.jpg"
-                  alt=""
-                  onClick={() => openLightboxOnSlide(2)}
-                />
-              </div>
+              <img src={b9_med} onClick={() => openLightboxOnSlide(9)} />
             </div>
           </FadeIn>
         </div>
@@ -53,8 +91,9 @@ function LightBox() {
             <div className="img-wrap img-hover-zoom">
               <div>
                 <img
-                  src="https://st.hzcdn.com/simgs/pictures/basements/fort-washington-md-m-a-k-remodeling-services-img~73418bf00e78bdbd_8-1522-1-6033263.jpg"
-                  onClick={() => openLightboxOnSlide(3)}
+                  src={b1_med}
+                  alt=""
+                  onClick={() => openLightboxOnSlide(2)}
                 />
               </div>
             </div>
@@ -63,60 +102,86 @@ function LightBox() {
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={800}>
             <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/177"
-                onClick={() => openLightboxOnSlide(4)}
-              />
+              <div>
+                <img src={b2_med} onClick={() => openLightboxOnSlide(3)} />
+              </div>
             </div>
           </FadeIn>
         </div>
         <div className="img-item">
-          <FadeIn transitionDuration={2000} delay={900}>
-            <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/176"
-                onClick={() => openLightboxOnSlide(5)}
-              />
-            </div>
-          </FadeIn>
-        </div>
-        <div className="img-item img-hover-zoom">
           <FadeIn transitionDuration={2000} delay={1000}>
             <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/175"
-                onClick={() => openLightboxOnSlide(6)}
-              />
+              <img src={b4_med} onClick={() => openLightboxOnSlide(4)} />
             </div>
           </FadeIn>
         </div>
-        <div className="img-item img-hover-zoom">
-          <FadeIn transitionDuration={2000} delay={1100}>
-            <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/174"
-                onClick={() => openLightboxOnSlide(7)}
-              />
-            </div>
-          </FadeIn>
-        </div>
-        <div className="img-item img-hover-zoom">
+        <div className="img-item">
           <FadeIn transitionDuration={2000} delay={1200}>
             <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/173"
-                onClick={() => openLightboxOnSlide(8)}
-              />
+              <img src={b5_med} onClick={() => openLightboxOnSlide(5)} />
             </div>
           </FadeIn>
         </div>
-        <div className="img-item img-hover-zoom">
-          <FadeIn transitionDuration={2000} delay={1300}>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={1400}>
             <div className="img-wrap img-hover-zoom">
-              <img
-                src="https://picsum.photos/270/172"
-                onClick={() => openLightboxOnSlide(9)}
-              />
+              <img src={b6_med} onClick={() => openLightboxOnSlide(6)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={1600}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b8_med} onClick={() => openLightboxOnSlide(7)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={1800}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b7_med} onClick={() => openLightboxOnSlide(8)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={2000}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b10_med} onClick={() => openLightboxOnSlide(10)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={2200}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b11_med} onClick={() => openLightboxOnSlide(11)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={2400}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b12_med} onClick={() => openLightboxOnSlide(12)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={2600}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b13_med} onClick={() => openLightboxOnSlide(13)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={2800}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b14_med} onClick={() => openLightboxOnSlide(14)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={3000}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b15_med} onClick={() => openLightboxOnSlide(15)} />
             </div>
           </FadeIn>
         </div>
@@ -127,17 +192,39 @@ function LightBox() {
         slideChangeAnimation="scale-in"
         toggler={lightboxController.toggler}
         sources={[
-          "https://picsum.photos/270/180",
-          "https://picsum.photos/270/179",
-          "https://picsum.photos/270/178",
-          "https://picsum.photos/270/177",
-          "https://picsum.photos/270/176",
-          "https://picsum.photos/270/175",
-          "https://picsum.photos/270/174",
-          "https://picsum.photos/270/173",
-          "https://picsum.photos/270/172",
+          b3,
+          b1,
+          b2,
+          b4,
+          b5,
+          b6,
+          b8,
+          b7,
+          b9,
+          b10,
+          b11,
+          b12,
+          b13,
+          b14,
+          b15,
         ]}
-        thumbs={[bg]}
+        thumbs={[
+          b3_thumb,
+          b1_thumb,
+          b2_thumb,
+          b4_thumb,
+          b5_thumb,
+          b6_thumb,
+          b8_thumb,
+          b7_thumb,
+          b9_thumb,
+          b10_thumb,
+          b11_thumb,
+          b12_thumb,
+          b13_thumb,
+          b14_thumb,
+          b15_thumb,
+        ]}
         slide={lightboxController.slide}
       />
     </>

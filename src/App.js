@@ -14,7 +14,7 @@ import FullBath from "./Components/FullBath";
 import SmallKitchenette from "./Components/SmallKitchenette";
 import MediumKitchenette from "./Components/MediumKitchenette";
 import LargeKitchenette from "./Components/LargeKitchenette";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 class App extends Component {
   constructor(props) {

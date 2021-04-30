@@ -67,12 +67,12 @@ class Footer extends Component {
             </li>
 
             <li>
-              <Link className="footLink" to="/bathrooms">
+              <Link className="footLink" to="/kitchenettes">
                 KITCHENETTES
               </Link>
             </li>
             <li>
-              <Link className="footLink" to="/kitchenettes">
+              <Link className="footLink" to="/bathrooms">
                 BATHROOMS
               </Link>
             </li>

@@ -1,13 +1,14 @@
 import React from "react";
 
 import "../App.css";
-import back_arrow from "../Images/back_arrow.png";
+import back from "../Images/back.png";
 
 function BackButton(props) {
   return (
     <div className="BackButtonDiv">
-      <div className="backText">{props.BackButtonText}</div>&nbsp;
-      <img className="backImage" src={back_arrow} alt="back button image" />
+      <img className="backImage" src={back} alt="back button image" />
+      &nbsp;
+      <div className="backText">{props.BackButtonText}</div>
     </div>
   );
 }

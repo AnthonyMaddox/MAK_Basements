@@ -26,3 +26,25 @@ class Home extends Component {
 }
 
 export default Home;
+
+// Google Webmaster tools
+
+//<!-- Global site tag (gtag.js) - Google Ads: 996889050 -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=AW-996889050"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'AW-996889050');
+// </script>
+
+// <!-- Global site tag (gtag.js) - Google Analytics -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50811956-2"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'UA-50811956-2');
+// </script>

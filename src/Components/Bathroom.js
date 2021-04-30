@@ -23,13 +23,13 @@ class Bathroom extends Component {
         <div className="quote">Maximize Convenience</div>
         <div className="gallery">
           <div>
-            <Link className="subLink" to="/bathrooms/half">
+            <Link className="subLink" to="/bathrooms/powder">
               <img className="pic" src={pow_3_med} alt="half bath" />
               <p className="selectorSub">Powder Room</p>
             </Link>
           </div>
           <div>
-            <Link className="subLink" to="/bathrooms/three_quarter">
+            <Link className="subLink" to="/bathrooms/mid">
               <img
                 className="pic"
                 src={mid_b_12_med}
@@ -39,7 +39,7 @@ class Bathroom extends Component {
             </Link>
           </div>
           <div>
-            <Link className="subLink" to="/bathrooms/full">
+            <Link className="subLink" to="/bathrooms/top">
               <img className="pic" src={top_b_5_med} alt="full bath" />
               <p className="selectorSub">Top-Tier Bath</p>
             </Link>

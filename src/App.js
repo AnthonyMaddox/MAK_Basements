@@ -68,25 +68,25 @@ class App extends Component {
           <Route path="/home" component={Home} exact={true} />
           <Route path="/kitchenettes" component={Kitchenette} exact={true} />
           <Route path="/bathrooms" component={Bathroom} exact={true} />
-          <Route path="/bathrooms/half" component={HalfBath} exact={true} />
+          <Route path="/bathrooms/powder" component={HalfBath} exact={true} />
           <Route
-            path="/bathrooms/three_quarter"
+            path="/bathrooms/mid"
             component={ThreeQuarterBath}
             exact={true}
           />
-          <Route path="/bathrooms/full" component={FullBath} exact={true} />
+          <Route path="/bathrooms/top" component={FullBath} exact={true} />
           <Route
-            path="/kitchenettes/small"
+            path="/kitchenettes/starter"
             component={SmallKitchenette}
             exact={true}
           />
           <Route
-            path="/kitchenettes/medium"
+            path="/kitchenettes/mid"
             component={MediumKitchenette}
             exact={true}
           />
           <Route
-            path="/kitchenettes/large"
+            path="/kitchenettes/top"
             component={LargeKitchenette}
             exact={true}
           />

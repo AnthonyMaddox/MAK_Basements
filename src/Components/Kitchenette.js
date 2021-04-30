@@ -23,7 +23,7 @@ class Kitchenette extends Component {
         <div className="quote">Establish Utility</div>
         <div className="gallery">
           <div>
-            <Link className="subLink" to="/kitchenettes/small">
+            <Link className="subLink" to="/kitchenettes/starter">
               <img
                 className="pic"
                 src={start_k_8_med}
@@ -33,13 +33,13 @@ class Kitchenette extends Component {
             </Link>
           </div>
           <div>
-            <Link className="subLink" to="/kitchenettes/medium">
+            <Link className="subLink" to="/kitchenettes/mid">
               <img className="pic" src={mid_k_2_med} alt="medium kitchenette" />
               <p className="selectorSub">Mid-Tier Kitchenette</p>
             </Link>
           </div>
           <div>
-            <Link className="subLink" to="/kitchenettes/large">
+            <Link className="subLink" to="/kitchenettes/top">
               <img className="pic" src={top_k_4_med} alt="large kitchenette" />
               <p className="selectorSub">Top-Tier Kitchenette</p>
             </Link>

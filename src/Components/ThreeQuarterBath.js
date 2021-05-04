@@ -25,8 +25,8 @@ class ThreeQuarterBath extends Component {
           <br></br>
           <br></br>Our mid-tier bathroom parallels the traditional three-quarter
           bathroom. It differs in that it includes a composite shower and tub
-          combination porcelain insert giving the bathroom the functionality of
-          a full-bath yet maintaining a compact size.
+          combination acrylic or vikrell insert giving the bathroom the
+          functionality of a full-bath yet maintaining a compact size.
           <br></br>
           <br></br>
           Our mid-tier bathroom does not include tiling on the walls.
@@ -34,7 +34,7 @@ class ThreeQuarterBath extends Component {
           <br></br>
           We provide consultation with design and product selection:
           <ul>
-            <li className="dList">Porcelain Shower/Tub Insert</li>
+            <li className="dList">Acrylic/Vikrell Shower/Tub Insert</li>
             <li className="dList">Luxury Vinyl Tile (LVT) Flooring</li>
             <li className="dList">Recessed Lighting</li>
             <li className="dList">Hand Picked Cabinetry/Vanity</li>

@@ -82,7 +82,7 @@ function LightBox() {
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={400}>
             <div className="img-wrap img-hover-zoom">
-              <img src={b9_med} onClick={() => openLightboxOnSlide(9)} />
+              <img src={b9_med} onClick={() => openLightboxOnSlide(2)} />
             </div>
           </FadeIn>
         </div>
@@ -93,7 +93,7 @@ function LightBox() {
                 <img
                   src={b1_med}
                   alt=""
-                  onClick={() => openLightboxOnSlide(2)}
+                  onClick={() => openLightboxOnSlide(3)}
                 />
               </div>
             </div>
@@ -103,7 +103,7 @@ function LightBox() {
           <FadeIn transitionDuration={2000} delay={800}>
             <div className="img-wrap img-hover-zoom">
               <div>
-                <img src={b2_med} onClick={() => openLightboxOnSlide(3)} />
+                <img src={b2_med} onClick={() => openLightboxOnSlide(4)} />
               </div>
             </div>
           </FadeIn>
@@ -111,35 +111,35 @@ function LightBox() {
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={1000}>
             <div className="img-wrap img-hover-zoom">
-              <img src={b4_med} onClick={() => openLightboxOnSlide(4)} />
+              <img src={b4_med} onClick={() => openLightboxOnSlide(5)} />
             </div>
           </FadeIn>
         </div>
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={1200}>
             <div className="img-wrap img-hover-zoom">
-              <img src={b5_med} onClick={() => openLightboxOnSlide(5)} />
+              <img src={b5_med} onClick={() => openLightboxOnSlide(6)} />
             </div>
           </FadeIn>
         </div>
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={1400}>
             <div className="img-wrap img-hover-zoom">
-              <img src={b6_med} onClick={() => openLightboxOnSlide(6)} />
+              <img src={b6_med} onClick={() => openLightboxOnSlide(7)} />
             </div>
           </FadeIn>
         </div>
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={1600}>
             <div className="img-wrap img-hover-zoom">
-              <img src={b8_med} onClick={() => openLightboxOnSlide(7)} />
+              <img src={b8_med} onClick={() => openLightboxOnSlide(8)} />
             </div>
           </FadeIn>
         </div>
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={1800}>
             <div className="img-wrap img-hover-zoom">
-              <img src={b7_med} onClick={() => openLightboxOnSlide(8)} />
+              <img src={b7_med} onClick={() => openLightboxOnSlide(9)} />
             </div>
           </FadeIn>
         </div>
@@ -193,6 +193,7 @@ function LightBox() {
         toggler={lightboxController.toggler}
         sources={[
           b3,
+          b9,
           b1,
           b2,
           b4,
@@ -200,7 +201,6 @@ function LightBox() {
           b6,
           b8,
           b7,
-          b9,
           b10,
           b11,
           b12,

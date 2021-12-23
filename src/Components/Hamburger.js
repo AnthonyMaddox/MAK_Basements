@@ -60,9 +60,18 @@ class Hamburger extends Component {
         >
           <p className="linkText">CONTACT US</p>
         </a>
-        <div>
+        
+        <a
+          href="https://makhomedesign.com/"
+          target="_blank"
+          className="mainSiteLink"
+    
+        >
+            <div>
           <img className="makA" src={MAK_A} alt="the A" />
         </div>
+          <p className="mainSite">Visit Our Main Site!</p>
+        </a>
       </Menu>
     );
   }

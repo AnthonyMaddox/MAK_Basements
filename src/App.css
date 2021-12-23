@@ -293,10 +293,12 @@ body {
   color: white;
   overflow-y: hidden;
 }
+.mainSiteLink {
+  opacity: 0.1;
+}
 .makA {
   margin: 20px 0 0 10px;
   width: 130px;
-  opacity: 0.1;
 }
 /* back button  */
 
@@ -323,6 +325,14 @@ body {
 /* Styling of overlay */
 /* .bm-overlay {
 } */
+.mainSite {
+  text-align: center;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.mainSiteLink:hover {
+  opacity: 1;
+}
 
 /* media queries */
 @media (min-width: 1000px) {

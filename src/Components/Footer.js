@@ -27,7 +27,7 @@ class Footer extends Component {
           <div>
             <a
               className="fbDiv"
-              href="https://www.facebook.com/MAKRemodelingServices"
+              href="https://www.facebook.com/MAK-Remodeling-Services-106874745136929/"
               target="_blank"
             >
               <img className="fbLogo" src={fbIcon} />

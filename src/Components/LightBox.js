@@ -48,6 +48,12 @@ import b14 from "../Images/Home/b14.jpg";
 import b15_med from "../Images/Home/b15-med.jpg";
 import b15_thumb from "../Images/Home/b15-thumb.jpg";
 import b15 from "../Images/Home/b15.jpg";
+import b16_med from "../Images/Home/b16-med.png";
+import b16_thumb from "../Images/Home/b16-thumb.png";
+import b16 from "../Images/Home/b16.png";
+import b17_med from "../Images/Home/b17-med.jpg";
+import b17_thumb from "../Images/Home/b17-thumb.jpg";
+import b17 from "../Images/Home/b17.jpg";
 
 function LightBox() {
   //   const [toggler, setToggler] = useState(false);
@@ -185,6 +191,20 @@ function LightBox() {
             </div>
           </FadeIn>
         </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={3000}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b16_med} onClick={() => openLightboxOnSlide(16)} />
+            </div>
+          </FadeIn>
+        </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={3000}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={b17_med} onClick={() => openLightboxOnSlide(16)} />
+            </div>
+          </FadeIn>
+        </div>
       </div>
 
       <FsLightbox
@@ -207,6 +227,8 @@ function LightBox() {
           b13,
           b14,
           b15,
+          b17,
+          b16,
         ]}
         thumbs={[
           b3_thumb,
@@ -224,6 +246,8 @@ function LightBox() {
           b13_thumb,
           b14_thumb,
           b15_thumb,
+          b17_thumb,
+          b16_thumb,
         ]}
         slide={lightboxController.slide}
       />

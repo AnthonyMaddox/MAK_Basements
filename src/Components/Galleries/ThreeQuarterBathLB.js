@@ -9,6 +9,9 @@ import mid_b_13 from "../../Images/Bathroom/mid-b-13.jpg";
 import mid_b_9_med from "../../Images/Bathroom/mid-b-9-med.jpg";
 import mid_b_9_thumb from "../../Images/Bathroom/mid-b-9-med.jpg";
 import mid_b_9 from "../../Images/Bathroom/mid-b-9.jpg";
+import mid_b_14_med from "../../Images/Bathroom/mid-b-14-med.jpg";
+import mid_b_14_thumb from "../../Images/Bathroom/mid-b-14-med.jpg";
+import mid_b_14 from "../../Images/Bathroom/mid-b-14.jpg";
 import "../../App.css";
 import "../../Gallery.css";
 import "../../App.css";
@@ -53,14 +56,21 @@ function ThreeQuarterBathLB() {
             </div>
           </FadeIn>
         </div>
+        <div className="img-item">
+          <FadeIn transitionDuration={2000} delay={1500}>
+            <div className="img-wrap img-hover-zoom">
+              <img src={mid_b_14_med} onClick={() => openLightboxOnSlide(4)} />
+            </div>
+          </FadeIn>
+        </div>
       </div>
 
       <FsLightbox
         initialAnimation="scale-in-long"
         slideChangeAnimation="scale-in"
         toggler={lightboxController.toggler}
-        sources={[mid_b_12, mid_b_9, mid_b_13]}
-        thumbs={[mid_b_12_thumb, mid_b_9_thumb, mid_b_13_thumb]}
+        sources={[mid_b_12, mid_b_9, mid_b_13, mid_b_14]}
+        thumbs={[mid_b_12_thumb, mid_b_9_thumb, mid_b_13_thumb, mid_b_14_thumb]}
         slide={lightboxController.slide}
       />
     </>

@@ -194,7 +194,7 @@ function LightBox() {
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={3000}>
             <div className="img-wrap img-hover-zoom">
-              <img src={b16_med} onClick={() => openLightboxOnSlide(16)} />
+              <img src={b16_med} onClick={() => openLightboxOnSlide(17)} />
             </div>
           </FadeIn>
         </div>

@@ -66,7 +66,7 @@ function HalfBathLB() {
         <div className="img-item">
           <FadeIn transitionDuration={2000} delay={1500}>
             <div className="img-wrap img-hover-zoom">
-              <img src={pow_4_med} onClick={() => openLightboxOnSlide(4)} />
+              <img src={pow_4_med} onClick={() => openLightboxOnSlide(5)} />
             </div>
           </FadeIn>
         </div>
